@@ -1,0 +1,27 @@
+{
+  "mean_identity_hash": "2ffe7ad9894021129a4639d1cb0ad3dcc88cb4239581f7e0852086cc0ada0543",
+  "best_checkpoint_sha256": "f0de05519eb4273b3e42535820a9f92f251b3527799e409ba4cf70142e2e03e8",
+  "best_epoch": 80,
+  "best_dev_mse": 0.5618054462126894,
+  "source_sha256": {
+    "frozen_data.py": "0b48aa2db43e20036362f306a8f4838bd36eb3d666f3160ecb28e0bcfde54d15",
+    "frozen_legacy_observer.py": "c3eb13cfb186cf6472f44c5c9ed970411bfcafae3c06bf3ae8779eb5a4fd1361",
+    "frozen_mean.py": "bf3553ddec2fd554b4f33a8f85a71991728a358d3ed58a9dff89a9f6e54388ab",
+    "observer.py": "38450f4c4e9cbbaf5f53b0f708c74c196d10e39192bdfb3906966811652b129d",
+    "train_mean.py": "02f73eebc05ee83d4ce26030ab4c95ec24ca8b81639580196b6a10852a3d346a"
+  },
+  "snapshot_date": "2026-10-06",
+  "source_runs": {
+    "mean": 22742,
+    "variance": 22754,
+    "historical_scene_replay": 22581,
+    "gain_in_progress": 22779
+  },
+  "upstream_summary_sha256": {
+    "mean": "61750ebf9ce7618beb7717ebae0111321b57a3ab83252876e3852fa2f7cfae46",
+    "calibration": "ec615268c6b54bf57ef206edb3dd2cabb8f28790ac8618a473a1a2d87c3f5f78",
+    "historical": "a6e9978c48b0a36207a07feaedf1b5aad822ed96bb472fcb0d8d358a8a73e76b"
+  },
+  "public_transform": "Aggregate field selection; numeric values retained; no participant-level records or raw images",
+  "historical_human_choice_run": 22517
+}

@@ -1,0 +1,35 @@
+{
+  "state": "accepted",
+  "review_date": "2026-10-05",
+  "purpose": "Proceed with fresh gain labels and downstream evaluation; not a claim of externally validated uncertainty",
+  "evidence": {
+    "slurm_job": 22754,
+    "slurm_state": "COMPLETED exit0",
+    "development_images": 371,
+    "candidate_states": 10719,
+    "candidate_measurements": 1967936,
+    "overall_variance_error_ratio": 0.9938282758306994,
+    "normalized_decile_ece": 0.0076054840321120405,
+    "within_state_spearman_image_macro": 0.764175902130038,
+    "all30_kind_budget_strata_ratio_range": [
+      0.9872544294940445,
+      0.9974783602919031
+    ],
+    "all30_kind_budget_strata_max_normalized_ece": 0.01274557050595544,
+    "all30_kind_budget_strata_min_spearman": 0.594489412588864,
+    "selected_dev_nll": 1.0953024587230982,
+    "constant_variance_dev_nll": 1.1211281228601473,
+    "logvar_floor_fraction": 0,
+    "logvar_ceiling_fraction": 0,
+    "frozen_mean_outputs_sha256": "64471ccb7d2519672712fe9553c15161d8bc9ac7c249e12bb494fb20f8b5ea28"
+  },
+  "limitations": [
+    "Engineering judgment after inspecting development results, not a preregistered pass threshold.",
+    "Checkpoint selection and calibration assessment share development data.",
+    "Calibration covers human/random development histories; new policy histories may shift the distribution.",
+    "Local error calibration does not establish expected-gain accuracy or a human uncertainty mechanism."
+  ],
+  "mean_identity_hash": "2ffe7ad9894021129a4639d1cb0ad3dcc88cb4239581f7e0852086cc0ada0543",
+  "variance_checkpoint_sha256": "6df0bc98ad9d81cc132c87e8f00d941eb21808559519b2fc6793649eb16546da",
+  "calibration_summary_sha256": "ec615268c6b54bf57ef206edb3dd2cabb8f28790ac8618a473a1a2d87c3f5f78"
+}

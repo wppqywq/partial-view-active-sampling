@@ -1,0 +1,22 @@
+{
+  "state": "accepted",
+  "reviewer": "Codex root: direct inspection of all six same-history r2 preview images and the four-panel computer comparison on2026-10-05",
+  "protocol_sha256": "bf11f4d6393e5c6f88fa39cc84046fc4f2ef82b8d8f37a1cdefab2376194b297",
+  "observer_sha256": "38450f4c4e9cbbaf5f53b0f708c74c196d10e39192bdfb3906966811652b129d",
+  "preparation_job": 22741,
+  "revision": "r2_narrower_gaussian_scale_space",
+  "scope": "Accept explicit engineering correction for the already authorized full mean training; no physiological or policy-performance validation claimed",
+  "observations": [
+    "Current-gaze-only views preserve central detail and lose peripheral texture; cumulative memory is labelled separately.",
+    "In the disputed computer image, unvisited white keyboard, right loudspeaker and desk retain conspicuously less fine detail than rejected r1 and full target.",
+    "At8fixations computer meanq changed0.7031to0.3520; core remains approximately10.7percent, q>=0.5area28.0percent, any untouched-layer mix14.0percent. Meanq is not a clear-area fraction.",
+    "Six predetermined images retain different cumulative coverage; short real trials are not padded to16. No policy results were used for parameter choice.",
+    "Target equality, coordinate/border preservation, exact-repeat no-op, monotone cumulativeq, candidate no-change eligibility and absence of untouched-layer mixing at sigma>=0.25px passed in Slurm."
+  ],
+  "limitations": [
+    "D50=0.28 and sigma scale0.8 are explicit engineering parameters, not fitted human acuity.",
+    "Gaussian scale interpolation attenuates rather than strictly eliminates high frequencies.",
+    "Cumulative best-resolution memory remains idealized and does not model forgetting or fixation duration.",
+    "Reconstruction sensitivity and U/G discrimination await the newly trained models."
+  ]
+}

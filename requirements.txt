@@ -1,0 +1,10 @@
+# Core versions recorded in the completed mean run.
+# Install PyTorch for the appropriate CUDA platform separately if necessary.
+numpy==2.2.6
+pillow==11.3.0
+matplotlib==3.10.6
+opencv-python-headless==5.0.0.93
+scipy==1.16.1
+torch==2.9.0
+torchvision==0.24.0
+# DINOv2 and DeepGaze source/weights are external; see docs/reproduction.md.

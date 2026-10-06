@@ -1,0 +1,129 @@
+{
+  "version": "foveated_v3",
+  "objective": "Continuous multiscale foveation and a training-data-derived approximately 16-observation budget, followed by new mean, independent variance, gains, closed-loop and matched human analyses.",
+  "old_results_preserved": true,
+  "stage": "r2_gain_labels_running",
+  "budget_rule": "ceil(mean training trajectory length including actual initial fixation)); compute from original rows and fixed manifest before training",
+  "geometry": "display-relative engineering scale; COCO-FreeView apparatus inheritance not independently confirmed; no degrees-of-visual-angle claim",
+  "chosen_observer_design": {
+    "core_diameter_fraction_of_display_short_side": 0.16,
+    "half_resolution_diameter_fraction_of_display_short_side": 0.28,
+    "resolution_floor": 0.0625,
+    "diameter_interpretation": "engineering sharpness q, not calibrated optical cutoff, transparency, or recognition probability",
+    "memory": "cumulative best available resolution, an explicit perfect-memory approximation",
+    "blur_scale_pixels": 0.8,
+    "renderer": "Gaussian scale space; sigma=0.8*sqrt(q^-2-1); interpolate Gaussian variance"
+  },
+  "steps": [
+    {
+      "name": "prepare",
+      "required": [
+        "training-only budget",
+        "manifest and input hashes",
+        "new/old views",
+        "coordinate and repeated-observation invariants",
+        "full-target preprocessing equality"
+      ],
+      "state": "r2_prepare22741_passed_and_visually_reviewed"
+    },
+    {
+      "name": "mean",
+      "required": [
+        "all 3343 train and 371 development images",
+        "new partial observations",
+        "budgets 1..B",
+        "MSE limited80epochs LRdecay earlystop",
+        "freeze selected checkpoint"
+      ],
+      "state": "completed_budget80_best80_frozen"
+    },
+    {
+      "name": "variance",
+      "required": [
+        "mean and shared parameters frozen",
+        "independent Gaussian NLL variance head",
+        "candidate calibration using new local weights"
+      ],
+      "state": "Slurm22754_completed_calibration_review_accepted"
+    },
+    {
+      "name": "gain",
+      "required": [
+        "all-new labels",
+        "before budgets 1..B-1",
+        "same fixed local weights for U and local delta",
+        "before-only online features",
+        "new G training"
+      ],
+      "state": "Slurm22762_saved938images_exit75;Slurm22779_continuation24h"
+    },
+    {
+      "name": "evaluation",
+      "required": [
+        "new closed-loop trajectories",
+        "1..B curves",
+        "same-image/start/budget human pairs",
+        "per-trial min(N,B)",
+        "real revisits",
+        "image-macro statistics",
+        "DeepGaze exact-target reaggregation"
+      ],
+      "state": "paths_and_human_choice_implemented_static_review_only"
+    }
+  ],
+  "reuse": [
+    "raw data",
+    "fixed splits",
+    "frozen DINO weights",
+    "identical full-image target feature cache and normalization",
+    "Gaussian toy",
+    "existing DeepGaze predictions where matching targets exist"
+  ],
+  "holdout_scope": "Previously inspected internal holdout is subsequent-version evaluation, not untouched confirmatory evidence.",
+  "execution": {
+    "numerical_work": "Slurm only",
+    "gpu_concurrency": 1,
+    "old_cache_policy": "Never reuse old partial features or gain labels; new cache keyed by new protocol/source hashes.",
+    "scheduler_state": "Gain job 22779 confirmed RUNNING on 2026-10-06 during public cleanup; frozen source checksums passed",
+    "shell_syntax": "All six Slurm stage wrappers bash -n passed; downstream numerical validation awaits frozen new models",
+    "python_execution": "Final frozen mean bestepoch80 devMSE0.56180545;variance bestepoch39 calibration reviewed and accepted for fresh gain labels",
+    "next_command_after_scheduler_access_restored": "none; revised full mean job submitted",
+    "reason": "User-authorized correction to overly clear peripheral/cumulative input; r1job22739 stopped before optimization",
+    "mean_run": "/mnt/disk2/youyouyang/proposal2/foveated_v3/mean/runs/22742",
+    "mean_time_limit_hours": 6,
+    "preparation_run": "/mnt/disk2/youyouyang/proposal2/foveated_v3/prepare/22741",
+    "next_check": "Check22779 on2026-10-06 at20:00Europe/Berlin; remaining labels approximately18GPUhours plus Gtraining and queue time;24h jobcap",
+    "progress_plot_run": "/mnt/disk2/youyouyang/proposal2/foveated_v3/progress/22755",
+    "variance_run": "/mnt/disk2/youyouyang/proposal2/foveated_v3/variance/runs/22754",
+    "variance_review": "/home/youyouyang/proposal2/foveated_v3/calibration_review_22754.json",
+    "gain_run": "/mnt/disk2/youyouyang/proposal2/foveated_v3/gain/runs/22779",
+    "gain_previous_run": "/mnt/disk2/youyouyang/proposal2/foveated_v3/gain/runs/22762",
+    "gain_continuation": "Same frozen source and NVIDIA A100 80GB PCIe MIG2g20gb;938of3714images persisted;24h time request within48h partition maximum"
+  },
+  "budget_verified": {
+    "job": 22741,
+    "mean": 15.457678464307138,
+    "maximum": 16,
+    "rule": "ceil(training_trial_mean_fixation_count)"
+  },
+  "observation_revision": "r2_narrower_gaussian_scale_space",
+  "superseded_runs": [
+    {
+      "job": 22738,
+      "stage": "prepare",
+      "reason": "overly broad peripheral detail"
+    },
+    {
+      "job": 22739,
+      "stage": "mean",
+      "status": "stopped during cache preparation; no epochs"
+    }
+  ],
+  "frozen_mean": {
+    "run": 22742,
+    "epoch": 80,
+    "dev_mse": 0.5618054462126894,
+    "checkpoint_sha256": "f0de05519eb4273b3e42535820a9f92f251b3527799e409ba4cf70142e2e03e8",
+    "mean_identity_hash": "2ffe7ad9894021129a4639d1cb0ad3dcc88cb4239581f7e0852086cc0ada0543"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "version": "continuous_foveation_v3",
+  "maximum_budget": 16,
+  "budget_rule": "ceil(training_trial_mean_fixation_count)",
+  "training_images": 3343,
+  "training_trials": 33340,
+  "training_mean_fixations": 15.457678464307138,
+  "training_median_fixations": 16,
+  "observer_kwargs": {
+    "long_side": 448,
+    "patch_multiple": 14,
+    "core_diameter_fraction": 0.16,
+    "half_resolution_diameter_fraction": 0.28,
+    "resolution_floor": 0.0625,
+    "blur_scale_pixels": 0.8
+  },
+  "geometry": {
+    "scale_basis": "full display short side, independent of image-content black borders",
+    "physical_calibration": false,
+    "status": "engineering scale; FreeView apparatus inheritance not directly verified",
+    "freeview_verified": "Official site: same stimuli; modified Search18 procedure; no cue/response; fixed5seconds.",
+    "freeview_source": "https://sites.google.com/view/cocosearch/coco-freeview",
+    "search18_only_reference": "22inch,47cm,approximately54x35degrees; not transferred to FreeView as verified fact",
+    "search18_source": "https://bpb-us-e1.wpmucdn.com/you.stonybrook.edu/dist/b/2177/files/2022/11/CYASHZ-2021-SR-Supplemental.pdf",
+    "core_diameter_output_pixels_for_448x280": 44.800000000000004,
+    "nominal_D50_output_pixels_for_448x280": 78.4,
+    "D50_meaning": "engineering q equals0.5; not a measured frequency cutoff, transparency, recognition probability, or human acuity",
+    "gaussian_sigma_pixels": "0.8*sqrt(q^-2-1); adjacent Gaussian layers mixed in variance",
+    "scale_choice": "D50=1.75 core diameters instead of3.75; fixed single engineering revision before model outcomes",
+    "untouched_source_support": "core and immediate transition where sigma<0.25px; ~3.7px beyond core with defaults"
+  },
+  "manifest_sha256": "7cf0f53990dad5b74657250d45197d832b5800a264c8792dc4ec3332c9541eb4",
+  "raw_fixations_sha256": "771167f4b5de5b9b58fb07c40d6e285d38b3b2ab9e4c6267df8a454a909da730"
+}

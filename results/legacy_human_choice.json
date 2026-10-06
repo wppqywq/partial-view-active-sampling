@@ -1,0 +1,231 @@
+{
+  "state": "completed",
+  "counts": {
+    "included": 17837,
+    "missing_target": 180,
+    "border_target_excluded_history_kept": 13
+  },
+  "overall": {
+    "images": 603,
+    "states": 17837,
+    "models": {
+      "Controls": {
+        "image_macro_logp": -4.201772141246056,
+        "image_bootstrap95": [
+          -4.226429548700553,
+          -4.178394455564402
+        ]
+      },
+      "U": {
+        "image_macro_logp": -4.195166507079658,
+        "image_bootstrap95": [
+          -4.219401945035249,
+          -4.1709968914296836
+        ]
+      },
+      "localG": {
+        "image_macro_logp": -4.138800122860876,
+        "image_bootstrap95": [
+          -4.1636731432438765,
+          -4.11448635124812
+        ]
+      },
+      "globalG": {
+        "image_macro_logp": -4.17356781947262,
+        "image_bootstrap95": [
+          -4.198484051258759,
+          -4.149053388056686
+        ]
+      },
+      "DeepGaze": {
+        "image_macro_logp": -3.8542965937326064,
+        "image_bootstrap95": [
+          -3.8838833163301865,
+          -3.8238505167691272
+        ]
+      },
+      "centerbias": {
+        "image_macro_logp": -4.6363074399468465,
+        "image_bootstrap95": [
+          -4.658197654330638,
+          -4.61599121790429
+        ]
+      }
+    },
+    "pairs": [
+      {
+        "first": "Controls",
+        "second": "U",
+        "mean_logp_difference": -0.006605634166397487,
+        "image_bootstrap95": [
+          -0.011112900914579425,
+          -0.0020004017106998906
+        ],
+        "direction": "positive favors first"
+      },
+      {
+        "first": "Controls",
+        "second": "localG",
+        "mean_logp_difference": -0.06297201838517923,
+        "image_bootstrap95": [
+          -0.07234203025684553,
+          -0.0538108329227362
+        ],
+        "direction": "positive favors first"
+      },
+      {
+        "first": "Controls",
+        "second": "globalG",
+        "mean_logp_difference": -0.028204321773435518,
+        "image_bootstrap95": [
+          -0.03547842570544904,
+          -0.020995191358578278
+        ],
+        "direction": "positive favors first"
+      },
+      {
+        "first": "Controls",
+        "second": "DeepGaze",
+        "mean_logp_difference": -0.347475547513449,
+        "image_bootstrap95": [
+          -0.37408359513376666,
+          -0.3222294125716142
+        ],
+        "direction": "positive favors first"
+      },
+      {
+        "first": "Controls",
+        "second": "centerbias",
+        "mean_logp_difference": 0.43453529870079205,
+        "image_bootstrap95": [
+          0.4141199484325736,
+          0.45351232725224333
+        ],
+        "direction": "positive favors first"
+      },
+      {
+        "first": "U",
+        "second": "localG",
+        "mean_logp_difference": -0.056366384218781734,
+        "image_bootstrap95": [
+          -0.06523592100966492,
+          -0.04773024159409018
+        ],
+        "direction": "positive favors first"
+      },
+      {
+        "first": "U",
+        "second": "globalG",
+        "mean_logp_difference": -0.021598687607038033,
+        "image_bootstrap95": [
+          -0.02901609133302533,
+          -0.013690806329454205
+        ],
+        "direction": "positive favors first"
+      },
+      {
+        "first": "U",
+        "second": "DeepGaze",
+        "mean_logp_difference": -0.3408699133470516,
+        "image_bootstrap95": [
+          -0.3671011836190652,
+          -0.31494152521238816
+        ],
+        "direction": "positive favors first"
+      },
+      {
+        "first": "U",
+        "second": "centerbias",
+        "mean_logp_difference": 0.44114093286718964,
+        "image_bootstrap95": [
+          0.420819209632455,
+          0.46075321978511213
+        ],
+        "direction": "positive favors first"
+      },
+      {
+        "first": "localG",
+        "second": "globalG",
+        "mean_logp_difference": 0.0347676966117437,
+        "image_bootstrap95": [
+          0.02855412451054256,
+          0.04135258220764384
+        ],
+        "direction": "positive favors first"
+      },
+      {
+        "first": "localG",
+        "second": "DeepGaze",
+        "mean_logp_difference": -0.28450352912826976,
+        "image_bootstrap95": [
+          -0.308358118882282,
+          -0.2594895593351015
+        ],
+        "direction": "positive favors first"
+      },
+      {
+        "first": "localG",
+        "second": "centerbias",
+        "mean_logp_difference": 0.4975073170859713,
+        "image_bootstrap95": [
+          0.4764473532944619,
+          0.5188783200492264
+        ],
+        "direction": "positive favors first"
+      },
+      {
+        "first": "globalG",
+        "second": "DeepGaze",
+        "mean_logp_difference": -0.31927122574001354,
+        "image_bootstrap95": [
+          -0.3440199067206903,
+          -0.29439071557740926
+        ],
+        "direction": "positive favors first"
+      },
+      {
+        "first": "globalG",
+        "second": "centerbias",
+        "mean_logp_difference": 0.4627396204742277,
+        "image_bootstrap95": [
+          0.44189415093448253,
+          0.4835853814388054
+        ],
+        "direction": "positive favors first"
+      },
+      {
+        "first": "DeepGaze",
+        "second": "centerbias",
+        "mean_logp_difference": 0.7820108462142411,
+        "image_bootstrap95": [
+          0.7523151979588899,
+          0.813829024214661
+        ],
+        "direction": "positive favors first"
+      }
+    ]
+  },
+  "primary": [
+    {
+      "stratum": "all",
+      "states": 17837,
+      "images": 603,
+      "localG_minus_U": 0.0563663842187817,
+      "family95_individual97_5_interval": [
+        0.046751376783890186,
+        0.06597923708387966
+      ]
+    },
+    {
+      "stratum": "fixed_disagreement",
+      "states": 2452,
+      "images": 541,
+      "localG_minus_U": 0.04322206592600343,
+      "family95_individual97_5_interval": [
+        0.020228925710878302,
+        0.06593321275953312
+      ]
+    }
+  ],
+  "interpretation": "Frozen new-image prediction for these observers; not official test, new-observer generalization, or proof of mechanisms."
+}

@@ -1,0 +1,3164 @@
+{
+  "overall": {
+    "images": 371,
+    "states": 10719,
+    "candidates": 1967936,
+    "mean_variance": 0.5619629382566773,
+    "mean_actual_mse": 0.5654527567018115,
+    "variance_error_ratio": 0.9938282758306994,
+    "normalized_decile_ece": 0.0076054840321120405,
+    "within_state_spearman_image_macro": 0.764175902130038,
+    "image_bootstrap95": {
+      "variance_error_ratio": [
+        0.988379502310876,
+        0.9992234421035311
+      ],
+      "normalized_decile_ece": [
+        0.0037212388985088745,
+        0.012615262066734566
+      ],
+      "within_state_spearman": [
+        0.7492933843847148,
+        0.7780515420625123
+      ]
+    },
+    "bootstrap_replicates": 2000,
+    "decile_boundaries": [
+      0.4266400933265686,
+      0.46365222334861755,
+      0.494940385222435,
+      0.5237827301025391,
+      0.5516101121902466,
+      0.5803215503692627,
+      0.6126421093940735,
+      0.6521360874176025,
+      0.7089625298976898
+    ],
+    "deciles": [
+      {
+        "bin": 0,
+        "image_probability_mass": 0.09794250194561852,
+        "mean_variance": 0.39480618885868235,
+        "mean_error": 0.392072873144075
+      },
+      {
+        "bin": 1,
+        "image_probability_mass": 0.09858463905183844,
+        "mean_variance": 0.44595542543710587,
+        "mean_error": 0.44455912318286483
+      },
+      {
+        "bin": 2,
+        "image_probability_mass": 0.09895481739980251,
+        "mean_variance": 0.47961781547411175,
+        "mean_error": 0.4798832746909322
+      },
+      {
+        "bin": 3,
+        "image_probability_mass": 0.0993173618927494,
+        "mean_variance": 0.5094829640518478,
+        "mean_error": 0.5118416678610083
+      },
+      {
+        "bin": 4,
+        "image_probability_mass": 0.09976043924614662,
+        "mean_variance": 0.537799720474214,
+        "mean_error": 0.5412625303736182
+      },
+      {
+        "bin": 5,
+        "image_probability_mass": 0.1003828772120283,
+        "mean_variance": 0.5656860712765515,
+        "mean_error": 0.570458243025929
+      },
+      {
+        "bin": 6,
+        "image_probability_mass": 0.10042980916738505,
+        "mean_variance": 0.5960931873805083,
+        "mean_error": 0.6015242310253441
+      },
+      {
+        "bin": 7,
+        "image_probability_mass": 0.10064045938678391,
+        "mean_variance": 0.6315895830913695,
+        "mean_error": 0.6370422448222538
+      },
+      {
+        "bin": 8,
+        "image_probability_mass": 0.10064179676152465,
+        "mean_variance": 0.6782341955296192,
+        "mean_error": 0.6847079356744554
+      },
+      {
+        "bin": 9,
+        "image_probability_mass": 0.10334529793612285,
+        "mean_variance": 0.7658330985302386,
+        "mean_error": 0.7761328395547021
+      }
+    ],
+    "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+    "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+  },
+  "by_kind_budget": [
+    {
+      "kind": "human",
+      "budget": 1,
+      "images": 371,
+      "states": 371,
+      "candidates": 68112,
+      "mean_variance": 0.645955668478594,
+      "mean_actual_mse": 0.6542950319398801,
+      "variance_error_ratio": 0.9872544294940445,
+      "normalized_decile_ece": 0.01274557050595544,
+      "within_state_spearman_image_macro": 0.594489412588864,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9799245250468012,
+          0.9949137337544868
+        ],
+        "normalized_decile_ece": [
+          0.00641726250053522,
+          0.020075474953198925
+        ],
+        "within_state_spearman": [
+          0.5665012016633468,
+          0.6252424147562173
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.5305705428123474,
+        0.56744464635849,
+        0.5950854420661926,
+        0.6197780966758728,
+        0.6431605517864227,
+        0.6659845352172852,
+        0.6912581205368041,
+        0.7214065670967102,
+        0.7672668755054474
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.0997924769151184,
+          "mean_variance": 0.49243086992655466,
+          "mean_error": 0.498950717925753
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09999715300422851,
+          "mean_variance": 0.5500986343105319,
+          "mean_error": 0.5539177127582862
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.10003681460049386,
+          "mean_variance": 0.581827096559586,
+          "mean_error": 0.5858601020585685
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.10041574973768369,
+          "mean_variance": 0.6077096465552145,
+          "mean_error": 0.6152673054859986
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.10060328167639497,
+          "mean_variance": 0.6314707443418544,
+          "mean_error": 0.6407772454882595
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.09979108614132189,
+          "mean_variance": 0.6546171671753297,
+          "mean_error": 0.6624802599792182
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.09971528078839388,
+          "mean_variance": 0.6782707881441422,
+          "mean_error": 0.6883225344739194
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.09950715558026878,
+          "mean_variance": 0.7055457741157679,
+          "mean_error": 0.7122243800652497
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.09935487730299053,
+          "mean_variance": 0.7423901055352221,
+          "mean_error": 0.7555117814966889
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.1007861242531054,
+          "mean_variance": 0.8148427778341518,
+          "mean_error": 0.8292590706159297
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "human",
+      "budget": 2,
+      "images": 371,
+      "states": 371,
+      "candidates": 68112,
+      "mean_variance": 0.6252994276095358,
+      "mean_actual_mse": 0.6312771184410184,
+      "variance_error_ratio": 0.99053079755806,
+      "normalized_decile_ece": 0.009469202441939942,
+      "within_state_spearman_image_macro": 0.6379241427986484,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9832404511667566,
+          0.9972805488957838
+        ],
+        "normalized_decile_ece": [
+          0.004444794591765246,
+          0.016783418225449213
+        ],
+        "within_state_spearman": [
+          0.6100313991189822,
+          0.663845103790032
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.5086831629276276,
+        0.5468379974365234,
+        0.5743442296981811,
+        0.5987071990966797,
+        0.6212957799434662,
+        0.6439292073249817,
+        0.6686596035957336,
+        0.7003196001052856,
+        0.7493166387081146
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09959017659489357,
+          "mean_variance": 0.4705105940939203,
+          "mean_error": 0.4744204538683889
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09973425094297732,
+          "mean_variance": 0.5290630478766362,
+          "mean_error": 0.5311456532138797
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09963891258112959,
+          "mean_variance": 0.5609415369838856,
+          "mean_error": 0.5626229733660019
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.09986576251316816,
+          "mean_variance": 0.5866825495055434,
+          "mean_error": 0.5911310396718396
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.10049543944001493,
+          "mean_variance": 0.6099658163889955,
+          "mean_error": 0.6170500714989473
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.10006986593071482,
+          "mean_variance": 0.6325325887781931,
+          "mean_error": 0.6403673107411209
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.09984473074095711,
+          "mean_variance": 0.6560534854231355,
+          "mean_error": 0.6618615036120641
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.0999334850160322,
+          "mean_variance": 0.6834978607581326,
+          "mean_error": 0.6948928624498064
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.10008414017847983,
+          "mean_variance": 0.722325842052242,
+          "mean_error": 0.7310963262338082
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10074323606163228,
+          "mean_variance": 0.7990311222371496,
+          "mean_error": 0.8057455010473584
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "human",
+      "budget": 3,
+      "images": 370,
+      "states": 370,
+      "candidates": 67920,
+      "mean_variance": 0.6095735113917085,
+      "mean_actual_mse": 0.6136497886624604,
+      "variance_error_ratio": 0.9933573231082882,
+      "normalized_decile_ece": 0.006948579384050774,
+      "within_state_spearman_image_macro": 0.6862258352997878,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9868057939757102,
+          0.9998688864356408
+        ],
+        "normalized_decile_ece": [
+          0.0035943196940762816,
+          0.013614646184953373
+        ],
+        "within_state_spearman": [
+          0.6605735600887387,
+          0.7097209033147633
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.4900919020175934,
+        0.5285840272903443,
+        0.5564637601375579,
+        0.5799515128135682,
+        0.6031658053398132,
+        0.6272298932075501,
+        0.6538536667823791,
+        0.6869603753089906,
+        0.7388928771018982
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09949941528066526,
+          "mean_variance": 0.45389396258041453,
+          "mean_error": 0.45295065553059155
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09965087136962135,
+          "mean_variance": 0.510648453082795,
+          "mean_error": 0.511566042917818
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09977854821604823,
+          "mean_variance": 0.5431239914984993,
+          "mean_error": 0.5459052270117856
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.09974089255339241,
+          "mean_variance": 0.5681931353189067,
+          "mean_error": 0.5717583739698808
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.10014511014511013,
+          "mean_variance": 0.5916450440542211,
+          "mean_error": 0.596088683991813
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.10029102747852742,
+          "mean_variance": 0.6149898682349553,
+          "mean_error": 0.6207928279925612
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.10000397031647032,
+          "mean_variance": 0.6402511660624249,
+          "mean_error": 0.6426015144569123
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.10004748629748621,
+          "mean_variance": 0.6696730056128183,
+          "mean_error": 0.6762207869551636
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.10015897015897018,
+          "mean_variance": 0.7104291156734444,
+          "mean_error": 0.7183713504438165
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10068370818370818,
+          "mean_variance": 0.7900942453496956,
+          "mean_error": 0.7973742366432153
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "human",
+      "budget": 4,
+      "images": 369,
+      "states": 369,
+      "candidates": 67744,
+      "mean_variance": 0.5981241351107155,
+      "mean_actual_mse": 0.6019347938039746,
+      "variance_error_ratio": 0.9936693164567255,
+      "normalized_decile_ece": 0.00679060128964714,
+      "within_state_spearman_image_macro": 0.7082484808830106,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9873045939355564,
+          1.0004210495329147
+        ],
+        "normalized_decile_ece": [
+          0.003572541913350442,
+          0.013037293721426967
+        ],
+        "within_state_spearman": [
+          0.6852144602117131,
+          0.7310228581158902
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.47672889530658724,
+        0.5151813387870788,
+        0.543730640411377,
+        0.5675386905670166,
+        0.5909223854541779,
+        0.6148898839950561,
+        0.642743045091629,
+        0.6764341950416565,
+        0.7316206991672517
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09938747359987204,
+          "mean_variance": 0.44184134752175286,
+          "mean_error": 0.4404486141932851
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09946547637096416,
+          "mean_variance": 0.4973538640807479,
+          "mean_error": 0.4982434619773266
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09952960788834771,
+          "mean_variance": 0.5298331193163502,
+          "mean_error": 0.5327522403335606
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.09987977808099753,
+          "mean_variance": 0.5558940079155883,
+          "mean_error": 0.5569483823625877
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.10000215833549159,
+          "mean_variance": 0.5792777732141431,
+          "mean_error": 0.5829684902736155
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.10028375202409753,
+          "mean_variance": 0.6027262454342843,
+          "mean_error": 0.6083151707565544
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.10023822957003854,
+          "mean_variance": 0.62830264320801,
+          "mean_error": 0.6305998381280166
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.10020335073688735,
+          "mean_variance": 0.6591634088528486,
+          "mean_error": 0.6675125470988469
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.1004042601857642,
+          "mean_variance": 0.7013096089573567,
+          "mean_error": 0.7068061697917682
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10060591320753917,
+          "mean_variance": 0.7819318899352382,
+          "mean_error": 0.7910410009171001
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "human",
+      "budget": 5,
+      "images": 368,
+      "states": 368,
+      "candidates": 67552,
+      "mean_variance": 0.5856990023182967,
+      "mean_actual_mse": 0.5896905598593475,
+      "variance_error_ratio": 0.9932310981169467,
+      "normalized_decile_ece": 0.008137902830882077,
+      "within_state_spearman_image_macro": 0.7359011573546755,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9865957863346021,
+          0.9998435080049402
+        ],
+        "normalized_decile_ece": [
+          0.0040819899950708645,
+          0.01437235236841455
+        ],
+        "within_state_spearman": [
+          0.7140413873680169,
+          0.75742250255941
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.4635939747095108,
+        0.5017447352409363,
+        0.5306701183319091,
+        0.5547420382499695,
+        0.5778032541275024,
+        0.6023352146148682,
+        0.6298460304737091,
+        0.6651395082473754,
+        0.7195285141468049
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.0992192778537888,
+          "mean_variance": 0.42969063134085156,
+          "mean_error": 0.42735852288440973
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09929429577442477,
+          "mean_variance": 0.48401603851645975,
+          "mean_error": 0.48228126262205157
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.0994393829864278,
+          "mean_variance": 0.5166978139044615,
+          "mean_error": 0.51878451520998
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.09963068049854744,
+          "mean_variance": 0.5430551075409654,
+          "mean_error": 0.5440102963545477
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.09981704587682856,
+          "mean_variance": 0.566060112221728,
+          "mean_error": 0.5697603996208914
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.10029950423972166,
+          "mean_variance": 0.5900964356591709,
+          "mean_error": 0.5968366074831645
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.10043460841694536,
+          "mean_variance": 0.6156009551747318,
+          "mean_error": 0.6214199406327556
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.10026617027296379,
+          "mean_variance": 0.6466742072377957,
+          "mean_error": 0.6554677317403921
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.10047285802211073,
+          "mean_variance": 0.6895887337759083,
+          "mean_error": 0.6973950175870225
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10112617605824128,
+          "mean_variance": 0.7701205728800471,
+          "mean_error": 0.7779989164751843
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "human",
+      "budget": 6,
+      "images": 367,
+      "states": 367,
+      "candidates": 67360,
+      "mean_variance": 0.5771662577595781,
+      "mean_actual_mse": 0.5806545232948408,
+      "variance_error_ratio": 0.9939925284393394,
+      "normalized_decile_ece": 0.0074447873533833525,
+      "within_state_spearman_image_macro": 0.7549752525748521,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9875214303492905,
+          1.0006997788777034
+        ],
+        "normalized_decile_ece": [
+          0.0039128093136171,
+          0.013705564666880703
+        ],
+        "within_state_spearman": [
+          0.7345869171617093,
+          0.7750527278566239
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.45363574624061587,
+        0.4919595539569855,
+        0.5213477194309235,
+        0.5460957646369934,
+        0.569257378578186,
+        0.5940727233886719,
+        0.6216841578483582,
+        0.6563270688056946,
+        0.7107308328151702
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09930248896955304,
+          "mean_variance": 0.4204786321274753,
+          "mean_error": 0.418012580662232
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09956960945125105,
+          "mean_variance": 0.4740459523963106,
+          "mean_error": 0.4723144309938642
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09949039427496513,
+          "mean_variance": 0.5070034505829614,
+          "mean_error": 0.5079718087006154
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.09965564587924938,
+          "mean_variance": 0.534087667314451,
+          "mean_error": 0.5354373328402576
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.09968179952427221,
+          "mean_variance": 0.5575382727564081,
+          "mean_error": 0.5610390440327272
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.10008914601898251,
+          "mean_variance": 0.5815547129473412,
+          "mean_error": 0.5890031935605122
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.10042107831617365,
+          "mean_variance": 0.6075010771343444,
+          "mean_error": 0.6136854794430624
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.10019573552015647,
+          "mean_variance": 0.6380635211432462,
+          "mean_error": 0.6463714517293706
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.10025869812143655,
+          "mean_variance": 0.6809216609424971,
+          "mean_error": 0.6849843044412322
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10133540392395979,
+          "mean_variance": 0.7653305343384353,
+          "mean_error": 0.7724303157408411
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "human",
+      "budget": 7,
+      "images": 365,
+      "states": 365,
+      "candidates": 66976,
+      "mean_variance": 0.5681812316771221,
+      "mean_actual_mse": 0.5715990526823358,
+      "variance_error_ratio": 0.9940205971490419,
+      "normalized_decile_ece": 0.007543482762834492,
+      "within_state_spearman_image_macro": 0.7716057886523424,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9873202172822598,
+          1.0004884899699888
+        ],
+        "normalized_decile_ece": [
+          0.003899800142406227,
+          0.013860814096742238
+        ],
+        "within_state_spearman": [
+          0.7526843217063722,
+          0.7908016836759449
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.4443989396095276,
+        0.4812977612018585,
+        0.5104191303253174,
+        0.5359891057014465,
+        0.5592469274997711,
+        0.5845208168029785,
+        0.6130760908126831,
+        0.647620439529419,
+        0.70372274518013
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09937267165863056,
+          "mean_variance": 0.41269928932806416,
+          "mean_error": 0.4101228601210955
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09952919274409001,
+          "mean_variance": 0.4638353164971025,
+          "mean_error": 0.4619164157296738
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09958648989898995,
+          "mean_variance": 0.49628869258668584,
+          "mean_error": 0.49702964763043933
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.09970486277421205,
+          "mean_variance": 0.5233863855872791,
+          "mean_error": 0.5246860261639932
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.09987490487062406,
+          "mean_variance": 0.5476862202139287,
+          "mean_error": 0.5515415557464761
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.09994671757086132,
+          "mean_variance": 0.5718243293947411,
+          "mean_error": 0.5788317805556273
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.10062674625602708,
+          "mean_variance": 0.5982304932671568,
+          "mean_error": 0.6052701995882191
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.10009735127885808,
+          "mean_variance": 0.6296493860129168,
+          "mean_error": 0.6332700489808707
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.0998594746197486,
+          "mean_variance": 0.6724580585796569,
+          "mean_error": 0.6778319028160712
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10140158832795816,
+          "mean_variance": 0.7610297292846001,
+          "mean_error": 0.7705819555702725
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "human",
+      "budget": 8,
+      "images": 361,
+      "states": 361,
+      "candidates": 66272,
+      "mean_variance": 0.5622147178940271,
+      "mean_actual_mse": 0.5650733542752678,
+      "variance_error_ratio": 0.994941123378739,
+      "normalized_decile_ece": 0.007676966267860828,
+      "within_state_spearman_image_macro": 0.7864622072759194,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9886554461690692,
+          1.0011173026605031
+        ],
+        "normalized_decile_ece": [
+          0.00400223180670712,
+          0.013517544381326754
+        ],
+        "within_state_spearman": [
+          0.7669614206136621,
+          0.8037020693569747
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.4370484113693237,
+        0.4740213930606842,
+        0.503002405166626,
+        0.5282357454299926,
+        0.5529388189315796,
+        0.5786096215248108,
+        0.6070042490959168,
+        0.6423253417015076,
+        0.7011872410774231
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09945042934135725,
+          "mean_variance": 0.40678930340137615,
+          "mean_error": 0.4029817170756561
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.0995955015475445,
+          "mean_variance": 0.4568123394815664,
+          "mean_error": 0.4542290988151025
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.0996195205033502,
+          "mean_variance": 0.4888208145669556,
+          "mean_error": 0.4877792405457912
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.09985481008680447,
+          "mean_variance": 0.5155863502085266,
+          "mean_error": 0.5163171679241221
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.09987900055853657,
+          "mean_variance": 0.5405520781125167,
+          "mean_error": 0.5438782819446558
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.09987469920814795,
+          "mean_variance": 0.5655764738274206,
+          "mean_error": 0.5703728395771007
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.10015365809167748,
+          "mean_variance": 0.5923232179701378,
+          "mean_error": 0.5989369957299501
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.10003752163118515,
+          "mean_variance": 0.6238212671078691,
+          "mean_error": 0.6271522053041495
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.10007200305849892,
+          "mean_variance": 0.6683303395812783,
+          "mean_error": 0.6737868247824249
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10146285597289753,
+          "mean_variance": 0.7588630550445127,
+          "mean_error": 0.7704186071921206
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "human",
+      "budget": 9,
+      "images": 358,
+      "states": 358,
+      "candidates": 65776,
+      "mean_variance": 0.5547609006865118,
+      "mean_actual_mse": 0.5573431175266409,
+      "variance_error_ratio": 0.9953669171486529,
+      "normalized_decile_ece": 0.007462493194039134,
+      "within_state_spearman_image_macro": 0.798070035572851,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9889490769265723,
+          1.0015932815298558
+        ],
+        "normalized_decile_ece": [
+          0.0038036228434179427,
+          0.01315320221522446
+        ],
+        "within_state_spearman": [
+          0.7810591711320951,
+          0.8159330112221186
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.4310913383960724,
+        0.4667310118675232,
+        0.49435584247112274,
+        0.5195196866989136,
+        0.544192373752594,
+        0.5699232220649719,
+        0.5987541079521179,
+        0.6343252062797546,
+        0.6932021081447601
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09936546179999384,
+          "mean_variance": 0.4012555753969153,
+          "mean_error": 0.39778529296529225
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09960515121129646,
+          "mean_variance": 0.4501177205278739,
+          "mean_error": 0.4477876679184306
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09974791221736053,
+          "mean_variance": 0.48089712984491667,
+          "mean_error": 0.4787761357610555
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.09995174605422512,
+          "mean_variance": 0.5070405675736661,
+          "mean_error": 0.5074789131963225
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.0999963340701819,
+          "mean_variance": 0.5319317694123291,
+          "mean_error": 0.5346284353887777
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.1000730167760545,
+          "mean_variance": 0.5568339362096196,
+          "mean_error": 0.5627545637703479
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.10012272895478218,
+          "mean_variance": 0.5841478572029932,
+          "mean_error": 0.590136419474131
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.10004948157444668,
+          "mean_variance": 0.615896385498555,
+          "mean_error": 0.620416852731209
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.09990958277445702,
+          "mean_variance": 0.6605395733205949,
+          "mean_error": 0.667002476088303
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10117858456720188,
+          "mean_variance": 0.7550187969470189,
+          "mean_error": 0.762601037115004
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "human",
+      "budget": 10,
+      "images": 352,
+      "states": 352,
+      "candidates": 64672,
+      "mean_variance": 0.5481965399101864,
+      "mean_actual_mse": 0.5512012259291447,
+      "variance_error_ratio": 0.9945488401011928,
+      "normalized_decile_ece": 0.007386841097746219,
+      "within_state_spearman_image_macro": 0.7974743518781199,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9881353665804797,
+          1.0009715061529803
+        ],
+        "normalized_decile_ece": [
+          0.0037762179226616763,
+          0.013498656753805167
+        ],
+        "within_state_spearman": [
+          0.7804324187217295,
+          0.8150236315460678
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.42571106255054475,
+        0.45962952375411986,
+        0.4866338074207306,
+        0.5115248799324036,
+        0.5360895395278931,
+        0.561886727809906,
+        0.5915994584560395,
+        0.6274353742599488,
+        0.6889970302581787
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09948230874633572,
+          "mean_variance": 0.3962854655041515,
+          "mean_error": 0.3926772507937311
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09963668453547717,
+          "mean_variance": 0.4436137097657238,
+          "mean_error": 0.4421807422372153
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09976460270316805,
+          "mean_variance": 0.4734783357153335,
+          "mean_error": 0.4731601340622547
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.0999756359486473,
+          "mean_variance": 0.4992269287814651,
+          "mean_error": 0.5006718036127277
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.09966586000410568,
+          "mean_variance": 0.523851636912884,
+          "mean_error": 0.5272761757717588
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.09993141919633408,
+          "mean_variance": 0.5489211210681486,
+          "mean_error": 0.553832518905559
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.10022867855786899,
+          "mean_variance": 0.5763641217194496,
+          "mean_error": 0.5820900845663997
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.09999283288523353,
+          "mean_variance": 0.6084048078546742,
+          "mean_error": 0.6120525220929365
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.10001971473917494,
+          "mean_variance": 0.6546710944708712,
+          "mean_error": 0.6629298827675489
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10130226268365473,
+          "mean_variance": 0.7529653989757686,
+          "mean_error": 0.7608319900730819
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "human",
+      "budget": 11,
+      "images": 346,
+      "states": 346,
+      "candidates": 63584,
+      "mean_variance": 0.5415371381900153,
+      "mean_actual_mse": 0.5447191449279528,
+      "variance_error_ratio": 0.9941584451959029,
+      "normalized_decile_ece": 0.0074488525116859685,
+      "within_state_spearman_image_macro": 0.8004448664968253,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9878682383834194,
+          1.000445031987093
+        ],
+        "normalized_decile_ece": [
+          0.0038608145057285035,
+          0.013597294454881618
+        ],
+        "within_state_spearman": [
+          0.7819955191696056,
+          0.8167817517879977
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.4201915740966797,
+        0.4538477063179016,
+        0.4801632672548294,
+        0.5051371693611145,
+        0.5292205214500427,
+        0.5547598958015442,
+        0.5842946946620942,
+        0.6202280998229981,
+        0.6808672845363617
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09955885275610707,
+          "mean_variance": 0.39105964667458165,
+          "mean_error": 0.38805457370512986
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09958124626657866,
+          "mean_variance": 0.43798953665808454,
+          "mean_error": 0.4365978961196317
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09991796648678869,
+          "mean_variance": 0.4672729139760224,
+          "mean_error": 0.4680438303739476
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.09992960184885759,
+          "mean_variance": 0.4927343154831666,
+          "mean_error": 0.4934472014649059
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.09968914354752499,
+          "mean_variance": 0.5169875987807369,
+          "mean_error": 0.5200969758373717
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.09994199512353409,
+          "mean_variance": 0.5419429671170889,
+          "mean_error": 0.5476359138862196
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.10030840376306421,
+          "mean_variance": 0.5690506966870715,
+          "mean_error": 0.5735166564489239
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.09999115768624443,
+          "mean_variance": 0.6010403758867924,
+          "mean_error": 0.6052455980786808
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.09971312306030516,
+          "mean_variance": 0.6468457002684942,
+          "mean_error": 0.6566891413934102
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.101368509460995,
+          "mean_variance": 0.7465951141424276,
+          "mean_error": 0.7539207487673555
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "human",
+      "budget": 12,
+      "images": 330,
+      "states": 330,
+      "candidates": 60624,
+      "mean_variance": 0.5375454703898368,
+      "mean_actual_mse": 0.541705873900391,
+      "variance_error_ratio": 0.9923198109693763,
+      "normalized_decile_ece": 0.008384651657816366,
+      "within_state_spearman_image_macro": 0.8111398128139052,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9860980233047987,
+          0.9986994270821721
+        ],
+        "normalized_decile_ece": [
+          0.004307319097708585,
+          0.014895670893695276
+        ],
+        "within_state_spearman": [
+          0.7944587798693425,
+          0.8282750822769911
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.4153773844242096,
+        0.4495032548904419,
+        0.47576422095298765,
+        0.500447404384613,
+        0.524546205997467,
+        0.5502759695053101,
+        0.5799891531467437,
+        0.6181435465812684,
+        0.6793204843997956
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09953289450448544,
+          "mean_variance": 0.3869728830036513,
+          "mean_error": 0.3851107382910253
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09960005430175882,
+          "mean_variance": 0.43377200935254995,
+          "mean_error": 0.4337171788772944
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09988739007204916,
+          "mean_variance": 0.46284926758287165,
+          "mean_error": 0.4640292813655598
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.10006377881377881,
+          "mean_variance": 0.4882644167335724,
+          "mean_error": 0.4884685104602806
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.09984651291469472,
+          "mean_variance": 0.512367924017459,
+          "mean_error": 0.5153790423436695
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.09977373163452706,
+          "mean_variance": 0.537343095425906,
+          "mean_error": 0.5436305427592723
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.10034137632149005,
+          "mean_variance": 0.5645807501516888,
+          "mean_error": 0.5711209125442033
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.10003372889736524,
+          "mean_variance": 0.5978910950238326,
+          "mean_error": 0.6058580238578326
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.09970554908054909,
+          "mean_variance": 0.6453292742283069,
+          "mean_error": 0.6564777624389001
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10121498345930163,
+          "mean_variance": 0.7425873311447028,
+          "mean_error": 0.7497025821658123
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "human",
+      "budget": 13,
+      "images": 317,
+      "states": 317,
+      "candidates": 58176,
+      "mean_variance": 0.5325525405126671,
+      "mean_actual_mse": 0.5371472151125454,
+      "variance_error_ratio": 0.9914461539209217,
+      "normalized_decile_ece": 0.009463504610123229,
+      "within_state_spearman_image_macro": 0.811949218555144,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9848740875775579,
+          0.9980189715455611
+        ],
+        "normalized_decile_ece": [
+          0.004663272895834564,
+          0.01578985775385619
+        ],
+        "within_state_spearman": [
+          0.7950902669709246,
+          0.828566189148271
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.41071636974811554,
+        0.4442775249481201,
+        0.47086697816848755,
+        0.496000736951828,
+        0.5194890201091766,
+        0.5452518463134766,
+        0.5745488107204437,
+        0.6118829250335693,
+        0.6731351315975189
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09946326128305621,
+          "mean_variance": 0.38348183606841824,
+          "mean_error": 0.3814349294409389
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09952792070792864,
+          "mean_variance": 0.42864024726940597,
+          "mean_error": 0.4282311332808245
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09996530535272645,
+          "mean_variance": 0.4577116908491271,
+          "mean_error": 0.4586451564008694
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.10007744730733698,
+          "mean_variance": 0.4835383828748728,
+          "mean_error": 0.48558552992084364
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.09993226520237557,
+          "mean_variance": 0.507658323186614,
+          "mean_error": 0.5106171390600092
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.09995874098299183,
+          "mean_variance": 0.5321920843355948,
+          "mean_error": 0.5378705156155081
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.10016713482801809,
+          "mean_variance": 0.5595575540235973,
+          "mean_error": 0.5662651551340047
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.10003015244044426,
+          "mean_variance": 0.5924013658336239,
+          "mean_error": 0.5999099852493747
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.09990593878606495,
+          "mean_variance": 0.639300652330672,
+          "mean_error": 0.652920249439566
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10097183310905711,
+          "mean_variance": 0.7377902433155717,
+          "mean_error": 0.7466428039502881
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "human",
+      "budget": 14,
+      "images": 280,
+      "states": 280,
+      "candidates": 51344,
+      "mean_variance": 0.5303860879484057,
+      "mean_actual_mse": 0.5350209516594434,
+      "variance_error_ratio": 0.9913370426024214,
+      "normalized_decile_ece": 0.00950524685923207,
+      "within_state_spearman_image_macro": 0.8211268139493005,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9836869318165655,
+          0.9982643580172224
+        ],
+        "normalized_decile_ece": [
+          0.004961461807552964,
+          0.01704947979720824
+        ],
+        "within_state_spearman": [
+          0.8030719959109635,
+          0.8385162618022566
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.40914025008678434,
+        0.4429108560085297,
+        0.46941266655921937,
+        0.4941805422306061,
+        0.5176146924495697,
+        0.5426042079925537,
+        0.5717028498649597,
+        0.6098461627960206,
+        0.6715299546718597
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09966562517343763,
+          "mean_variance": 0.38123132956592864,
+          "mean_error": 0.37950750381758963
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09955782065157066,
+          "mean_variance": 0.42709239106419544,
+          "mean_error": 0.42655486339007803
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09966200032606287,
+          "mean_variance": 0.4561838123687431,
+          "mean_error": 0.456624000132844
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.09995578206515705,
+          "mean_variance": 0.48194987193177813,
+          "mean_error": 0.4832465081423603
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.09992605484792985,
+          "mean_variance": 0.5059482463467372,
+          "mean_error": 0.5092374790739685
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.0998438410547785,
+          "mean_variance": 0.529834605573416,
+          "mean_error": 0.5355717928006549
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.10013860271672768,
+          "mean_variance": 0.5564625530620816,
+          "mean_error": 0.5650603057691266
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.10008540504634254,
+          "mean_variance": 0.5897229607512582,
+          "mean_error": 0.5978512956028168
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.09983235514485513,
+          "mean_variance": 0.6376138578888368,
+          "mean_error": 0.6505563108926583
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10133251297313797,
+          "mean_variance": 0.733954979417142,
+          "mean_error": 0.7420336859379987
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "human",
+      "budget": 15,
+      "images": 229,
+      "states": 229,
+      "candidates": 42032,
+      "mean_variance": 0.5310908692997165,
+      "mean_actual_mse": 0.5362948113005045,
+      "variance_error_ratio": 0.9902964901186186,
+      "normalized_decile_ece": 0.010766471039201343,
+      "within_state_spearman_image_macro": 0.8275831638229405,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.98142614137732,
+          0.9984267638246841
+        ],
+        "normalized_decile_ece": [
+          0.0055604169345766594,
+          0.019366209333400115
+        ],
+        "within_state_spearman": [
+          0.8085825418776511,
+          0.8463669809752956
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.40977502763271334,
+        0.44348384737968444,
+        0.4695254504680634,
+        0.49403175711631775,
+        0.5172705352306366,
+        0.5426144361495971,
+        0.5719681501388549,
+        0.6113271713256836,
+        0.6754017114639282
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.0997208766791191,
+          "mean_variance": 0.38118601784119194,
+          "mean_error": 0.37894916766014525
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09971637563067696,
+          "mean_variance": 0.4278918107826241,
+          "mean_error": 0.4275538386286535
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09981020313989745,
+          "mean_variance": 0.45669300521882933,
+          "mean_error": 0.4564097851012939
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.09988219340702963,
+          "mean_variance": 0.48200328668511283,
+          "mean_error": 0.4838105988245691
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.09989547388564853,
+          "mean_variance": 0.5056854561792944,
+          "mean_error": 0.5087265711018756
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.09976439211564758,
+          "mean_variance": 0.5296795329602398,
+          "mean_error": 0.5356831551029552
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.09992922379658185,
+          "mean_variance": 0.5565690107867662,
+          "mean_error": 0.5664409077406924
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.10000252885760531,
+          "mean_variance": 0.5905723967399426,
+          "mean_error": 0.6007607363406977
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.09988598404264346,
+          "mean_variance": 0.6397122767960475,
+          "mean_error": 0.6531684790046792
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10139274844515021,
+          "mean_variance": 0.7372450332814757,
+          "mean_error": 0.7476627006115663
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "random",
+      "budget": 1,
+      "images": 371,
+      "states": 371,
+      "candidates": 68112,
+      "mean_variance": 0.6477375685826707,
+      "mean_actual_mse": 0.6558748035842934,
+      "variance_error_ratio": 0.9875933105569028,
+      "normalized_decile_ece": 0.01240668944309703,
+      "within_state_spearman_image_macro": 0.5948656300771992,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9805138963703439,
+          0.994938604329793
+        ],
+        "normalized_decile_ece": [
+          0.006735752149317794,
+          0.019486103629656013
+        ],
+        "within_state_spearman": [
+          0.5650438786553972,
+          0.6230137720666868
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.5319242715835572,
+        0.5688533544540405,
+        0.5969984650611877,
+        0.6218210577964782,
+        0.644850105047226,
+        0.6680304646492005,
+        0.693085253238678,
+        0.7235848903656006,
+        0.7698278486728668
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.0997573476052249,
+          "mean_variance": 0.49402712189322484,
+          "mean_error": 0.500737552799122
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.10000206161762763,
+          "mean_variance": 0.5513698061340505,
+          "mean_error": 0.5565002529625255
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.10004802914590655,
+          "mean_variance": 0.5833714128128832,
+          "mean_error": 0.5881863896686023
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.10049972302330794,
+          "mean_variance": 0.6095564516255275,
+          "mean_error": 0.618131345837512
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.10069190505511263,
+          "mean_variance": 0.6333069269981598,
+          "mean_error": 0.6410002851267709
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.09957343495079335,
+          "mean_variance": 0.6562732509003438,
+          "mean_error": 0.6613921865230741
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.09981882635184523,
+          "mean_variance": 0.6802840338105434,
+          "mean_error": 0.6862295762278421
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.09940643737813551,
+          "mean_variance": 0.7074906850702243,
+          "mean_error": 0.7106033638751215
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.09965701227493684,
+          "mean_variance": 0.7444621972289059,
+          "mean_error": 0.7571566463950609
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10054522259710941,
+          "mean_variance": 0.8170430744412049,
+          "mean_error": 0.8385150481142748
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "random",
+      "budget": 2,
+      "images": 371,
+      "states": 371,
+      "candidates": 68112,
+      "mean_variance": 0.623451631286849,
+      "mean_actual_mse": 0.6286683196785151,
+      "variance_error_ratio": 0.9917020021076713,
+      "normalized_decile_ece": 0.008297997892328431,
+      "within_state_spearman_image_macro": 0.672811659696381,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9851312303167733,
+          0.9980304181082231
+        ],
+        "normalized_decile_ece": [
+          0.004320220523993888,
+          0.015139636742697644
+        ],
+        "within_state_spearman": [
+          0.6467568787076873,
+          0.6974921685529827
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.5044049501419068,
+        0.5422942280769348,
+        0.570521354675293,
+        0.5961660742759705,
+        0.6204439103603363,
+        0.6439635753631592,
+        0.6695972383022308,
+        0.7014552593231201,
+        0.7480361938476563
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09959516374610719,
+          "mean_variance": 0.4677779643203188,
+          "mean_error": 0.46892740880361394
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09963039122826856,
+          "mean_variance": 0.5246999730135788,
+          "mean_error": 0.5250930969036194
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09972776175606372,
+          "mean_variance": 0.5568533009632674,
+          "mean_error": 0.5620908228199939
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.10023893166581847,
+          "mean_variance": 0.5835952399294015,
+          "mean_error": 0.5911378247553183
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.10002990654523672,
+          "mean_variance": 0.608250072824996,
+          "mean_error": 0.6134201191802422
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.10007491198528934,
+          "mean_variance": 0.6321406583100093,
+          "mean_error": 0.6352135684802238
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.1000638577879144,
+          "mean_variance": 0.6564136902360286,
+          "mean_error": 0.6602834479705907
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.09991952491952498,
+          "mean_variance": 0.6849752684369252,
+          "mean_error": 0.6907885739947125
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.09996887939104922,
+          "mean_variance": 0.7226520875066856,
+          "mean_error": 0.7331000463278711
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10075067097472754,
+          "mean_variance": 0.7948475146402373,
+          "mean_error": 0.80425110854302
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "random",
+      "budget": 3,
+      "images": 371,
+      "states": 371,
+      "candidates": 68112,
+      "mean_variance": 0.6040759167610102,
+      "mean_actual_mse": 0.6083329732074056,
+      "variance_error_ratio": 0.993002094849552,
+      "normalized_decile_ece": 0.006997905150447968,
+      "within_state_spearman_image_macro": 0.7184631057007492,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9870156451994495,
+          0.9995644040711893
+        ],
+        "normalized_decile_ece": [
+          0.0038414527953382635,
+          0.013248626998541973
+        ],
+        "within_state_spearman": [
+          0.6963954729052889,
+          0.7399709692318251
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.4853323698043823,
+        0.5218761920928955,
+        0.5502329051494599,
+        0.5747093677520752,
+        0.5976596772670746,
+        0.621794581413269,
+        0.6484915792942048,
+        0.6834429383277894,
+        0.7331717193126679
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09934466411471127,
+          "mean_variance": 0.45072454170959075,
+          "mean_error": 0.45099521656365615
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09950868052283152,
+          "mean_variance": 0.5045897345842041,
+          "mean_error": 0.5046391340675406
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09974745511302117,
+          "mean_variance": 0.5364302743787168,
+          "mean_error": 0.5369099563084911
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.0997664023607419,
+          "mean_variance": 0.5626717548287615,
+          "mean_error": 0.5672196490193223
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.09993608330872486,
+          "mean_variance": 0.5862544831468011,
+          "mean_error": 0.5916557690633784
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.10007276855743837,
+          "mean_variance": 0.6095526967097574,
+          "mean_error": 0.6160908744083525
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.10003157220138355,
+          "mean_variance": 0.6348487348706505,
+          "mean_error": 0.638836518892733
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.10041443750170159,
+          "mean_variance": 0.6650229519091522,
+          "mean_error": 0.6692526595441157
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.1001418262031469,
+          "mean_variance": 0.7056026529337477,
+          "mean_error": 0.713058470033074
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.1010361101162988,
+          "mean_variance": 0.781044763294248,
+          "mean_error": 0.7905397103042903
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "random",
+      "budget": 4,
+      "images": 371,
+      "states": 371,
+      "candidates": 68112,
+      "mean_variance": 0.5881289623740873,
+      "mean_actual_mse": 0.5920590026302396,
+      "variance_error_ratio": 0.9933620800651743,
+      "normalized_decile_ece": 0.006845830607609966,
+      "within_state_spearman_image_macro": 0.7514469164885405,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9870807551683062,
+          0.9996461751246979
+        ],
+        "normalized_decile_ece": [
+          0.0034749619676577204,
+          0.013273677305669343
+        ],
+        "within_state_spearman": [
+          0.7298612091213831,
+          0.7709992060463572
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.46679369211196897,
+        0.5036722779273987,
+        0.5322542786598206,
+        0.5564215540885925,
+        0.5795909464359283,
+        0.6045047283172608,
+        0.6325340628623962,
+        0.6688391208648682,
+        0.7224576830863952
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.0990622912203101,
+          "mean_variance": 0.4334615864793399,
+          "mean_error": 0.4328402835392986
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09970304852380323,
+          "mean_variance": 0.4863555557659847,
+          "mean_error": 0.48745143723759365
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09969646770943943,
+          "mean_variance": 0.5183629881116113,
+          "mean_error": 0.5193717937816815
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.09996919026989785,
+          "mean_variance": 0.5444936204982088,
+          "mean_error": 0.5476714562831368
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.09985568349365519,
+          "mean_variance": 0.5678508234297244,
+          "mean_error": 0.5744679593220816
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.09991730622626849,
+          "mean_variance": 0.591998982132746,
+          "mean_error": 0.5987657725546573
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.09996917063544422,
+          "mean_variance": 0.6181795536404743,
+          "mean_error": 0.622760134596155
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.10003912492120035,
+          "mean_variance": 0.6494750603235293,
+          "mean_error": 0.654741798018178
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.10065905661424528,
+          "mean_variance": 0.6932071614912468,
+          "mean_error": 0.6966548467019139
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10112866038573583,
+          "mean_variance": 0.77310545561487,
+          "mean_error": 0.7809701859694904
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "random",
+      "budget": 5,
+      "images": 371,
+      "states": 371,
+      "candidates": 68112,
+      "mean_variance": 0.5741590497295169,
+      "mean_actual_mse": 0.5772662376810411,
+      "variance_error_ratio": 0.9946174091801969,
+      "normalized_decile_ece": 0.006594740795885956,
+      "within_state_spearman_image_macro": 0.7742468600901391,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9883819190305295,
+          1.0003716309173925
+        ],
+        "normalized_decile_ece": [
+          0.003331620359119525,
+          0.01243849413399934
+        ],
+        "within_state_spearman": [
+          0.7553223021461279,
+          0.7934867201571063
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.45440700054168703,
+        0.4887301385402679,
+        0.5162623584270477,
+        0.5411701917648315,
+        0.5645286738872528,
+        0.5890678882598877,
+        0.6172415673732757,
+        0.6528106093406677,
+        0.7098023355007171
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09898914960825335,
+          "mean_variance": 0.4219844001735542,
+          "mean_error": 0.41939502479604257
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09941918668333767,
+          "mean_variance": 0.4726379615487864,
+          "mean_error": 0.4716970308835533
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09965369405227895,
+          "mean_variance": 0.5027196690456284,
+          "mean_error": 0.5036675856702256
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.09982164389593635,
+          "mean_variance": 0.5290885181832065,
+          "mean_error": 0.5308742791685732
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.1000062077597455,
+          "mean_variance": 0.552959989356716,
+          "mean_error": 0.556342808234075
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.10001186902719919,
+          "mean_variance": 0.5766788743074388,
+          "mean_error": 0.5809030366960498
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.09990944590001191,
+          "mean_variance": 0.6027294171018545,
+          "mean_error": 0.6079221306305566
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.09987893395912265,
+          "mean_variance": 0.6339808282345256,
+          "mean_error": 0.6384067898817474
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.10091121535697005,
+          "mean_variance": 0.6791375377475842,
+          "mean_error": 0.6832391207033224
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10139865375714434,
+          "mean_variance": 0.7637091927908475,
+          "mean_error": 0.7740525958232436
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "random",
+      "budget": 6,
+      "images": 371,
+      "states": 371,
+      "candidates": 68112,
+      "mean_variance": 0.561746408645103,
+      "mean_actual_mse": 0.5641113391745487,
+      "variance_error_ratio": 0.995807688367147,
+      "normalized_decile_ece": 0.0052735703496009445,
+      "within_state_spearman_image_macro": 0.7862529240780385,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9896425517929799,
+          1.0016939210024474
+        ],
+        "normalized_decile_ece": [
+          0.003070266086374202,
+          0.011303176388860418
+        ],
+        "within_state_spearman": [
+          0.7671277534927878,
+          0.8036513201050278
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.4415527433156967,
+        0.47494387030601504,
+        0.5020613849163056,
+        0.5272649884223938,
+        0.5506199896335602,
+        0.575565242767334,
+        0.6048740684986115,
+        0.641223156452179,
+        0.7002606809139252
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09878484984617061,
+          "mean_variance": 0.41074629777370913,
+          "mean_error": 0.4080688604102257
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09938329817457171,
+          "mean_variance": 0.4593772230564326,
+          "mean_error": 0.4589698618179869
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09975250444000444,
+          "mean_variance": 0.48890361142009153,
+          "mean_error": 0.48892681641004015
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.10006023850363469,
+          "mean_variance": 0.5148109640657074,
+          "mean_error": 0.5173908766539204
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.10020414595886303,
+          "mean_variance": 0.539011327724885,
+          "mean_error": 0.5415476795569463
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.10013712047910159,
+          "mean_variance": 0.5628822606758762,
+          "mean_error": 0.5674345781760862
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.10002640834008758,
+          "mean_variance": 0.589861927884674,
+          "mean_error": 0.5936226505693002
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.0996507030705144,
+          "mean_variance": 0.6222137472667215,
+          "mean_error": 0.6252375547551945
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.10056203623420594,
+          "mean_variance": 0.6682347630415297,
+          "mean_error": 0.6696047422097489
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10143869495284583,
+          "mean_variance": 0.7556640183245963,
+          "mean_error": 0.7643803301960232
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "random",
+      "budget": 7,
+      "images": 371,
+      "states": 371,
+      "candidates": 68112,
+      "mean_variance": 0.5500508363921096,
+      "mean_actual_mse": 0.5528368712074493,
+      "variance_error_ratio": 0.9949604757561581,
+      "normalized_decile_ece": 0.006667080611819851,
+      "within_state_spearman_image_macro": 0.7999984095223953,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9888328925527988,
+          1.0016045416622634
+        ],
+        "normalized_decile_ece": [
+          0.004163804786543443,
+          0.012233563177471209
+        ],
+        "within_state_spearman": [
+          0.7805273960561329,
+          0.8176107826576096
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.4312096297740936,
+        0.4627906858921051,
+        0.48939481377601624,
+        0.5140516877174377,
+        0.5383202135562897,
+        0.5631283760070801,
+        0.592225843667984,
+        0.6297248363494873,
+        0.6881154656410218
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09886368217736144,
+          "mean_variance": 0.40173611578483664,
+          "mean_error": 0.39848490067589737
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09930055531470626,
+          "mean_variance": 0.44808517886733307,
+          "mean_error": 0.44679153567001284
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09990591824318246,
+          "mean_variance": 0.4764201064608096,
+          "mean_error": 0.4767965252683718
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.10008706571206574,
+          "mean_variance": 0.5017962399195159,
+          "mean_error": 0.5020713340250177
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.09989970393861904,
+          "mean_variance": 0.5262882483784815,
+          "mean_error": 0.529574540220065
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.10011318608016728,
+          "mean_variance": 0.5505328885185713,
+          "mean_error": 0.5561207012388821
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.09997853626980989,
+          "mean_variance": 0.5771704230807321,
+          "mean_error": 0.5824639905999426
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.09975424208914775,
+          "mean_variance": 0.6097434292233664,
+          "mean_error": 0.6121040805420725
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.10034828248271642,
+          "mean_variance": 0.6564137187673191,
+          "mean_error": 0.6586161796744511
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.1017488276922239,
+          "mean_variance": 0.7462232164612929,
+          "mean_error": 0.758973505581412
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "random",
+      "budget": 8,
+      "images": 371,
+      "states": 371,
+      "candidates": 68112,
+      "mean_variance": 0.5389422586765324,
+      "mean_actual_mse": 0.5413626078814294,
+      "variance_error_ratio": 0.9955291533444307,
+      "normalized_decile_ece": 0.006260245009629456,
+      "within_state_spearman_image_macro": 0.8081194066177604,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9891286635214823,
+          1.0016036872518495
+        ],
+        "normalized_decile_ece": [
+          0.0038691512532147174,
+          0.011778939325109452
+        ],
+        "within_state_spearman": [
+          0.7897410706422402,
+          0.8249841566867739
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.4215471833944321,
+        0.452519029378891,
+        0.47780420780181887,
+        0.5018203854560852,
+        0.525566041469574,
+        0.5510944247245788,
+        0.5789570510387421,
+        0.6168782711029053,
+        0.6770404756069184
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09875964902497916,
+          "mean_variance": 0.392807505909516,
+          "mean_error": 0.3905716162308872
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09949245264693377,
+          "mean_variance": 0.4379951000650432,
+          "mean_error": 0.43592994033328425
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.10014846592087161,
+          "mean_variance": 0.46549833098707305,
+          "mean_error": 0.46491845996786124
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.10008901279538074,
+          "mean_variance": 0.4897765629495638,
+          "mean_error": 0.4901317874774227
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.09965591601794438,
+          "mean_variance": 0.5135841321243839,
+          "mean_error": 0.5162250072851728
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.0998182438630552,
+          "mean_variance": 0.5383434884144165,
+          "mean_error": 0.5420919095197511
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.0998403882543033,
+          "mean_variance": 0.5646851377314844,
+          "mean_error": 0.5705445003586916
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.09996444854935423,
+          "mean_variance": 0.596787113563618,
+          "mean_error": 0.5997062871184206
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.10031681499841875,
+          "mean_variance": 0.6447362723058622,
+          "mean_error": 0.6476849611537282
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10191460792875887,
+          "mean_variance": 0.7388475452370219,
+          "mean_error": 0.7492405055862428
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "random",
+      "budget": 9,
+      "images": 371,
+      "states": 371,
+      "candidates": 68112,
+      "mean_variance": 0.5300248061056376,
+      "mean_actual_mse": 0.532459545984191,
+      "variance_error_ratio": 0.9954273711553936,
+      "normalized_decile_ece": 0.007080164108522594,
+      "within_state_spearman_image_macro": 0.8121327182210883,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9889655208347938,
+          1.001416030018766
+        ],
+        "normalized_decile_ece": [
+          0.0040531351997516035,
+          0.01233695556955882
+        ],
+        "within_state_spearman": [
+          0.7928850159997249,
+          0.828403863395602
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.4143338978290558,
+        0.44391711354255675,
+        0.46797263622283936,
+        0.4910274803638458,
+        0.5144160389900208,
+        0.5403889179229736,
+        0.5696060597896576,
+        0.6080762028694153,
+        0.6709920763969421
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09888809434800014,
+          "mean_variance": 0.3866957615191125,
+          "mean_error": 0.3837945954324226
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09938152452893018,
+          "mean_variance": 0.43002569181326206,
+          "mean_error": 0.4275200576615567
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.10012965284191697,
+          "mean_variance": 0.4561933689521153,
+          "mean_error": 0.4548783137937606
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.1001912232159873,
+          "mean_variance": 0.4794479564753502,
+          "mean_error": 0.4811492805646224
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.09988414690655252,
+          "mean_variance": 0.5026115127716849,
+          "mean_error": 0.5045094755439342
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.0997315839296971,
+          "mean_variance": 0.5270993636677347,
+          "mean_error": 0.5315397624437763
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.0996803805471259,
+          "mean_variance": 0.5545694780378975,
+          "mean_error": 0.5592719753554016
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.09981879362775589,
+          "mean_variance": 0.5873407571307261,
+          "mean_error": 0.5912485701644253
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.10034224161582649,
+          "mean_variance": 0.6366000651268185,
+          "mean_error": 0.6409365022549529
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10195235843820753,
+          "mean_variance": 0.7334507409582719,
+          "mean_error": 0.7433130979839092
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "random",
+      "budget": 10,
+      "images": 371,
+      "states": 371,
+      "candidates": 68112,
+      "mean_variance": 0.5219979550896832,
+      "mean_actual_mse": 0.5241813065573072,
+      "variance_error_ratio": 0.9958347399262217,
+      "normalized_decile_ece": 0.006365576801613095,
+      "within_state_spearman_image_macro": 0.8160607518046649,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9896217750880425,
+          1.0020348796842957
+        ],
+        "normalized_decile_ece": [
+          0.003473630247310668,
+          0.011624217493070481
+        ],
+        "within_state_spearman": [
+          0.7982231365821577,
+          0.8319318517378186
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.40739200711250306,
+        0.4359216272830963,
+        0.4595771461725235,
+        0.4821293532848358,
+        0.5055263936519623,
+        0.530987787246704,
+        0.5604332387447357,
+        0.599735176563263,
+        0.6651766955852508
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09880024980260822,
+          "mean_variance": 0.3799596524717018,
+          "mean_error": 0.3773040240559225
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09961166977676404,
+          "mean_variance": 0.42273219074352336,
+          "mean_error": 0.42095845798164094
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09996720391767565,
+          "mean_variance": 0.44801455645964194,
+          "mean_error": 0.4466378928118243
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.10017295662932445,
+          "mean_variance": 0.4707930077481346,
+          "mean_error": 0.4710355251732297
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.10003056757184121,
+          "mean_variance": 0.49390155993691753,
+          "mean_error": 0.49510146789402404
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.09967808658846393,
+          "mean_variance": 0.5179954475475556,
+          "mean_error": 0.522145773929443
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.09960901258071071,
+          "mean_variance": 0.5453798555503105,
+          "mean_error": 0.5507199301592905
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.10004680199255665,
+          "mean_variance": 0.5788109854001294,
+          "mean_error": 0.5831506662674624
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.1002052389434465,
+          "mean_variance": 0.6293371067238079,
+          "mean_error": 0.6323427376784618
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10187821219660839,
+          "mean_variance": 0.7270193981752037,
+          "mean_error": 0.7361945242673777
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "random",
+      "budget": 11,
+      "images": 371,
+      "states": 371,
+      "candidates": 68112,
+      "mean_variance": 0.514510632957818,
+      "mean_actual_mse": 0.5163254314701579,
+      "variance_error_ratio": 0.9964851653594274,
+      "normalized_decile_ece": 0.007562315051306513,
+      "within_state_spearman_image_macro": 0.8218877762423155,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9899678187602479,
+          1.0022128637154282
+        ],
+        "normalized_decile_ece": [
+          0.004220418918607948,
+          0.012915186576116946
+        ],
+        "within_state_spearman": [
+          0.8043382159184641,
+          0.8373806729029473
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.40188007056713104,
+        0.43003242611885073,
+        0.45183314085006715,
+        0.47393144965171813,
+        0.4966033399105072,
+        0.5219435811042785,
+        0.5512162923812867,
+        0.589776623249054,
+        0.658292269706726
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09887336196298459,
+          "mean_variance": 0.375480639265252,
+          "mean_error": 0.37255263906943137
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.0996255840595463,
+          "mean_variance": 0.4170542985892304,
+          "mean_error": 0.412734965274399
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09982083888333887,
+          "mean_variance": 0.44103016061385825,
+          "mean_error": 0.43848060509078607
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.09996443873212744,
+          "mean_variance": 0.46278572427373726,
+          "mean_error": 0.4620795487867813
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.10007572681511355,
+          "mean_variance": 0.4850743388065192,
+          "mean_error": 0.4869523285226252
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.09990956043432458,
+          "mean_variance": 0.5089781219701179,
+          "mean_error": 0.5136077653555392
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.09960634883983946,
+          "mean_variance": 0.5361734779693043,
+          "mean_error": 0.5404541848010703
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.0999771454960134,
+          "mean_variance": 0.5688579613125646,
+          "mean_error": 0.5731288999144789
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.10016521738219859,
+          "mean_variance": 0.6200866992149802,
+          "mean_error": 0.6238487578542232
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10198177739451324,
+          "mean_variance": 0.7233062974024359,
+          "mean_error": 0.7329061592728363
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "random",
+      "budget": 12,
+      "images": 371,
+      "states": 371,
+      "candidates": 68112,
+      "mean_variance": 0.5074564251141785,
+      "mean_actual_mse": 0.5092457669182319,
+      "variance_error_ratio": 0.9964862902741799,
+      "normalized_decile_ece": 0.008580176647945251,
+      "within_state_spearman_image_macro": 0.8260219066743195,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9908340858787047,
+          1.0019143015144456
+        ],
+        "normalized_decile_ece": [
+          0.0050008916933921635,
+          0.013616649224295369
+        ],
+        "within_state_spearman": [
+          0.8101325181446601,
+          0.841204277998885
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.3958602875471115,
+        0.4232305884361267,
+        0.4448434293270111,
+        0.4659844636917114,
+        0.48861758410930634,
+        0.513926112651825,
+        0.5433225393295288,
+        0.5806103825569153,
+        0.652036601305008
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09871477120887495,
+          "mean_variance": 0.3700643357129806,
+          "mean_error": 0.3669155629585244
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09949805828343565,
+          "mean_variance": 0.41049935369220697,
+          "mean_error": 0.4061303876499751
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.09996032858650782,
+          "mean_variance": 0.43428258819144544,
+          "mean_error": 0.43073446062015475
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.09990763298546318,
+          "mean_variance": 0.4552982878718453,
+          "mean_error": 0.45339820883741255
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.10006785339922128,
+          "mean_variance": 0.4772933496858808,
+          "mean_error": 0.4780146693181786
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.10000147258401976,
+          "mean_variance": 0.5010104290112478,
+          "mean_error": 0.5057164741595769
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.09956243638437033,
+          "mean_variance": 0.5282759239686832,
+          "mean_error": 0.5327017569948957
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.09978750285354067,
+          "mean_variance": 0.5604306275248367,
+          "mean_error": 0.5665974156036867
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.10041592972017502,
+          "mean_variance": 0.611936324401637,
+          "mean_error": 0.6166023735902024
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10208401399439132,
+          "mean_variance": 0.7185341313190874,
+          "mean_error": 0.7284478000659558
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "random",
+      "budget": 13,
+      "images": 371,
+      "states": 371,
+      "candidates": 68112,
+      "mean_variance": 0.5012575740949714,
+      "mean_actual_mse": 0.5029335406202075,
+      "variance_error_ratio": 0.9966676183036643,
+      "normalized_decile_ece": 0.008785430687611461,
+      "within_state_spearman_image_macro": 0.8294319574240325,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9911787086456654,
+          1.0021718407697435
+        ],
+        "normalized_decile_ece": [
+          0.005240091510699574,
+          0.013592853610332573
+        ],
+        "within_state_spearman": [
+          0.8131155258809458,
+          0.8441917677467078
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.390802326798439,
+        0.41803416013717654,
+        0.43920113146305084,
+        0.45948644876480105,
+        0.48175856471061707,
+        0.5065843105316162,
+        0.5356006681919098,
+        0.5737326622009278,
+        0.6451857149600982
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09874790762172835,
+          "mean_variance": 0.36592722031725256,
+          "mean_error": 0.3625765523160646
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09939620782781161,
+          "mean_variance": 0.4054040261350784,
+          "mean_error": 0.40158086779729263
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.10021147942728124,
+          "mean_variance": 0.42888469980441835,
+          "mean_error": 0.42466728135264786
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.1000039530699908,
+          "mean_variance": 0.4491657210745416,
+          "mean_error": 0.44725767453952037
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.09993857361192258,
+          "mean_variance": 0.47042594914278535,
+          "mean_error": 0.4699563028093473
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.10007027498183148,
+          "mean_variance": 0.493791623085985,
+          "mean_error": 0.4968190799190226
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.09952352416975052,
+          "mean_variance": 0.5207435411813959,
+          "mean_error": 0.5257332044806621
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.09966645644711683,
+          "mean_variance": 0.5533556537776994,
+          "mean_error": 0.5592581239076796
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.10039243382403763,
+          "mean_variance": 0.6048104884129167,
+          "mean_error": 0.6125540078512887
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10204918901852865,
+          "mean_variance": 0.7134470963226414,
+          "mean_error": 0.7220900928347617
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "random",
+      "budget": 14,
+      "images": 371,
+      "states": 371,
+      "candidates": 68112,
+      "mean_variance": 0.49591811079824566,
+      "mean_actual_mse": 0.4973450553281552,
+      "variance_error_ratio": 0.9971308762103445,
+      "normalized_decile_ece": 0.008664615753778032,
+      "within_state_spearman_image_macro": 0.8304572416940588,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9914006057870263,
+          1.002463486571079
+        ],
+        "normalized_decile_ece": [
+          0.005062610983673318,
+          0.013424201878129451
+        ],
+        "within_state_spearman": [
+          0.814242474384129,
+          0.8438934508994114
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.38587113916873933,
+        0.4127926707267761,
+        0.4337311863899231,
+        0.453491348028183,
+        0.47549791634082794,
+        0.5004118204116821,
+        0.5303483486175538,
+        0.5683501243591309,
+        0.6404431223869324
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.0986166578442522,
+          "mean_variance": 0.3620259669019209,
+          "mean_error": 0.3581392817018118
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09959631236164253,
+          "mean_variance": 0.4002042846869102,
+          "mean_error": 0.39702876289661143
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.10012291822433335,
+          "mean_variance": 0.42349712713597104,
+          "mean_error": 0.4200545265334095
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.10005463286713283,
+          "mean_variance": 0.4435255313926267,
+          "mean_error": 0.4404589404087465
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.0999579757244851,
+          "mean_variance": 0.4643052500311611,
+          "mean_error": 0.463403795026678
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.10000552055386959,
+          "mean_variance": 0.48762410365924347,
+          "mean_error": 0.48895390206874456
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.09977747619257056,
+          "mean_variance": 0.5147838121730974,
+          "mean_error": 0.5195866540793835
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.09950863470910644,
+          "mean_variance": 0.5481464245242321,
+          "mean_error": 0.553506239524976
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.10028977181099824,
+          "mean_variance": 0.5996316530414764,
+          "mean_error": 0.6075906132548935
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10207009971160917,
+          "mean_variance": 0.7088924957804755,
+          "mean_error": 0.717948736202378
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    },
+    {
+      "kind": "random",
+      "budget": 15,
+      "images": 371,
+      "states": 371,
+      "candidates": 68112,
+      "mean_variance": 0.49044572198483083,
+      "mean_actual_mse": 0.4916855758568099,
+      "variance_error_ratio": 0.9974783602919031,
+      "normalized_decile_ece": 0.0088059447163567,
+      "within_state_spearman_image_macro": 0.8283105641815255,
+      "image_bootstrap95": {
+        "variance_error_ratio": [
+          0.9920457213345313,
+          1.0028302438537096
+        ],
+        "normalized_decile_ece": [
+          0.005128553021836998,
+          0.013344854615080991
+        ],
+        "within_state_spearman": [
+          0.8115569641233629,
+          0.8430416434376878
+        ]
+      },
+      "bootstrap_replicates": 2000,
+      "decile_boundaries": [
+        0.381973397731781,
+        0.40790427327156065,
+        0.4284706175327301,
+        0.4479027032852173,
+        0.4690100699663162,
+        0.4931415855884552,
+        0.5231461584568023,
+        0.5616939544677735,
+        0.6353848397731782
+      ],
+      "deciles": [
+        {
+          "bin": 0,
+          "image_probability_mass": 0.09864997423959687,
+          "mean_variance": 0.3582523635937315,
+          "mean_error": 0.3538877237790806
+        },
+        {
+          "bin": 1,
+          "image_probability_mass": 0.09963114060991422,
+          "mean_variance": 0.3956703045512099,
+          "mean_error": 0.39209728571125835
+        },
+        {
+          "bin": 2,
+          "image_probability_mass": 0.10004526068794943,
+          "mean_variance": 0.41852688067826427,
+          "mean_error": 0.41517019681846645
+        },
+        {
+          "bin": 3,
+          "image_probability_mass": 0.09996639563266924,
+          "mean_variance": 0.43817489719417674,
+          "mean_error": 0.4355306018038369
+        },
+        {
+          "bin": 4,
+          "image_probability_mass": 0.09986398232270882,
+          "mean_variance": 0.45814442020232915,
+          "mean_error": 0.4565599197542567
+        },
+        {
+          "bin": 5,
+          "image_probability_mass": 0.09997832029082024,
+          "mean_variance": 0.4807806499731436,
+          "mean_error": 0.4820548633207006
+        },
+        {
+          "bin": 6,
+          "image_probability_mass": 0.09980407433237629,
+          "mean_variance": 0.5076335190377387,
+          "mean_error": 0.5121950261985655
+        },
+        {
+          "bin": 7,
+          "image_probability_mass": 0.09955599955599959,
+          "mean_variance": 0.5414023309207184,
+          "mean_error": 0.5468607024093655
+        },
+        {
+          "bin": 8,
+          "image_probability_mass": 0.10033932917187628,
+          "mean_variance": 0.5937323836117712,
+          "mean_error": 0.6023249106068687
+        },
+        {
+          "bin": 9,
+          "image_probability_mass": 0.10216552315608918,
+          "mean_variance": 0.7052323788216529,
+          "mean_error": 0.7130292576197755
+        }
+      ],
+      "aggregation": "equal candidates/state, equal available budgets/kind, equal kinds/image, equal images",
+      "bin_rule": "raw predicted variance quantiles fixed on development candidates; no temperature fitting"
+    }
+  ]
+}
