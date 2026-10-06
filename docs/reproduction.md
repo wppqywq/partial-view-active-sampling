@@ -1,66 +1,72 @@
 # Reproduction
 
-## What this release contains
+## Dataset setup
 
-This is a source-and-results snapshot of an ongoing research experiment. It includes current training/evaluation code, the inherited helper sources, data/reference entry points, and small aggregate outputs. It excludes raw images, fixation records, pretrained weights, trained checkpoints, caches, personal notes, slide decks, and full execution logs.
-
-Core package versions are in `requirements.txt`. DINOv2 was loaded from revision `7764ea0f912e53c92e82eb78a2a1631e92725fc8`. The pretrained ViT-S/14 checkpoint SHA-256 is `b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9`. External packages and data keep their own licenses and access conditions.
-
-## Rebuild the public figures
-
-| Scope | Current reproducibility |
-| --- | --- |
-| Aggregate figures | Rebuilt successfully from the bundled JSON files |
-| Gaussian example | Original numerical code and results included |
-| Dataset and image split | Public inputs, recorded checksums, deterministic rule, and preparation helper provided; new helper not redownload-tested |
-| Full training on this server | Existing frozen inputs and environment are required |
-| Full training on a fresh server | Not yet standalone: absolute paths, archived helper/checkpoint dependencies, manifest contracts, and reference score files require porting or regeneration |
-
-Start with [dataset acquisition](dataset.md). Do not confuse figure reproduction with reproducing model training from raw data. The exact dataset archives and format description must be obtained from the authors.
-
-No dataset or trained model is needed. With NumPy and Matplotlib installed:
+Use the five official downloads linked in the main README (about 2.5 GB compressed). Python 3.12, the packages in `requirements.txt`, curl, ripgrep, and sha256sum are required. On a Slurm cluster:
 
 ```bash
-python scripts/plot_results.py
+export PROJECT_CODE="$PWD"
+export DATA_ROOT=/path/to/new/external/coco_freeview
+export PROJECT_PYTHON=/path/to/python
+sbatch scripts/prepare_dataset.sh
 ```
 
-On the research server, numerical work must run in Slurm:
+Adapt the partition and resource directives to the cluster. Use a new external destination: the helper refuses to overwrite an existing manifest. It downloads missing files, checks `data_a/RAW_SHA256SUMS`, and runs the original audit. The helper was statically checked; its full download has not been repeated. If Google Drive returns a login page, obtain the actual `readme.txt` from the authors and place it in `DATA_ROOT/raw/`.
 
-```bash
-sbatch scripts/build_public_figures.sh
+The audit creates `manifest.json`, `audit.json`, extracted display images, and coordinate overlays. Image coordinates refer to the supplied 1680 x 1050 displays. COCO caption metadata supplies original dimensions for recovering content bounds; no original COCO image archive is needed.
+
+For the split, sort unique official training image names by hexadecimal SHA-256 of `20260928:development:IMAGE_FILENAME`. The first `round(0.1 * N)` form development; the remainder form training. Official validation images form the internal holdout. All participants for an image remain together. Expected sizes are 3343/371/603. Absolute paths make manifest byte hashes installation-specific.
+
+## Exact observation settings
+
+Resize bilinearly to 448 x 280 and pad to multiples of 14. Let `d` be distance from fixation, `r0 = 22.4` pixels, and `r50 = 39.2` pixels:
+
+```text
+q(d) = max(1/16, 1 / (1 + (max(d - r0, 0) / (r50 - r0))^2))
+sigma(q) = 0.8 * sqrt(q^(-2) - 1)
 ```
 
-The figure script reads only `results/*.json` and writes `results/figures/`. It does not touch active training outputs. `scripts/check_release.sh` checks ASCII text, repository contents, aggregate checksums, and shell syntax. The figure job also parses Python sources without importing or executing training modules.
+Take the pointwise maximum q over the history; an empty history has q = 1/16. Blur the resized RGB at sigma 0, 0.25, 0.5, 1, 2, 4, 8, and 16, interpolating adjacent layers in Gaussian variance. There is no downsampling pyramid. Scales are relative to the full display, not its letterboxed content. Local U and local gain use content-masked Gaussian weights with sigma = r50. Model policies require a mean content-resolution increase above 1e-8; human-choice candidates retain revisits. A repeated identical observation changes no pixels.
 
-## Existing research server
+## Training dependencies
 
-Training is site-specific. The original paths intentionally remain in scientific source snapshots, because source hashes are bound to checkpoints. This public cleanup did not migrate data or rewrite training code.
+These are the original experiment entry points, not a portable training package. The current mean, variance, gain, and evaluation sources are included. Older experiments are represented by aggregate results; their full pipelines are not included.
 
-| Input or output | Existing location |
+| Required artifact | Original source or generator |
 | --- | --- |
-| Workspace | `/home/youyouyang/proposal2` |
-| Data manifest | `/mnt/disk2/youyouyang/proposal2/coco_freeview/manifest.json` |
-| DINO source and complete targets | `/mnt/disk2/youyouyang/proposal2/predictor_d` |
-| Current experiment outputs | `/mnt/disk2/youyouyang/proposal2/foveated_v3` |
-| Existing Python environment | `/mnt/disk2/youyouyang/deepgaze_video/envs/official/bin/python` |
+| DINOv2 ViT-S/14 source and weights | `facebookresearch/dinov2`, revision `7764ea0f912e53c92e82eb78a2a1631e92725fc8` |
+| Dataset manifest | `data_a/audit.py` |
+| Full-image targets and channel normalization | Original `predictor_d` cache; extraction utilities in `support/frozen_data.py` |
+| Direct mean architecture and encoder | `support/frozen_mean.py` |
+| Legacy preprocessing | `support/frozen_legacy_observer.py` |
+| Preparation comparison against rejected r1 | Archived `foveated_v3/prepare/22738/observer.py` |
+| Current preparation protocol and visual review | `foveated_v3/prepare.py`, followed by inspection |
+| Mean checkpoint and source identity | `foveated_v3/train_mean.py` |
+| Variance checkpoint and calibration review | `foveated_v3/train_variance.py`, followed by calibration review |
+| Fresh gain labels and checkpoint | `foveated_v3/train_gain.py` |
+| Matched DeepGaze scores | `reference_c/development.py` |
 
-The wrappers use one GPU at a time, four CPU cores, and 24 GB host memory. Do not run training or numerical diagnostics on the login node. Preparation and figure rendering use short CPU jobs. Use the site's partition, GPU, and time limits rather than copying these requests to an unrelated cluster.
+DINO weight SHA-256: `b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9`.
 
-The sequence is:
+Launchers assemble an isolated run directory: mean training copies the three helper files, and downstream stages copy the exact sources from the selected mean run. `support/` exposes those implementations but does not redirect the original launchers. The public legacy-observer copy has ASCII-only docstrings, so its hash differs from the immutable run copy.
 
-1. `run_prepare.sh`: lock the training-derived budget and render observation previews.
-2. `run_mean.sh`: use `FV3_SOURCE_DIR`, `FV3_BUDGET_JSON`, and an actual `FV3_VISUAL_REVIEW_JSON` to train the mean.
-3. `run_variance.sh --mean-run ABSOLUTE_MEAN_RUN`: freeze the completed mean and fit variance.
-4. Inspect calibration results and record the checkpoint-bound review. A review must reflect actual results; it is not a bypass flag.
-5. `run_gain.sh`: set `FV3_SOURCE_DIR`, `FV3_MEAN_RUN`, and `FV3_VARIANCE_RUN` to generate fresh labels and train G.
-6. `run_evaluate.sh` and `run_human_choice.sh`: additionally set `FV3_GAIN_RUN`; submit sequentially under the single-GPU limit.
+On the original server, data and experiment artifacts live under `/mnt/disk2/youyouyang/proposal2`. The reused interpreter is `/mnt/disk2/youyouyang/deepgaze_video/envs/official/bin/python`, whose base interpreter also lives in that scratch tree. Keep both while jobs depend on them.
 
-Resume only from the matching immutable source/protocol/cache identity. Do not submit a second copy of a live stage. Do not change an active job's code, checkpoints, source paths, or caches.
+To rerun elsewhere, configure Python constants as well as launchers, regenerate the target cache and normalization, and create new manifest/protocol/source identities. Do not bypass hash checks or substitute edited files into an existing frozen run. The rejected-r1 preview dependency and archived DeepGaze score path also need replacement or regeneration. Public checkpoint bundles and automated bootstrap from raw data are not yet provided.
 
-Mean and variance are already complete in this snapshot. The active gain continuation uses frozen sources under run 22779. No existing experiment needs to be restarted because of this cleanup.
+## Execution
 
-## Another server
+All numerical work on the research server runs through Slurm. GPU launchers use one GPU, four CPUs, and 24 GB host memory; submit sequentially under its single-GPU quota.
 
-A full rerun requires obtaining the data and pretrained models, recreating the documented preprocessing and image split, and configuring site-specific paths and Slurm launchers. Several Python constants also refer to archived source/checkpoint paths. Editing a launcher alone is insufficient. The `support/` sources expose the inherited implementation, but public checkpoint bundles and a portable configuration layer have not yet been released.
+| Stage | Launcher and required inputs |
+| --- | --- |
+| Observation preparation | `run_prepare.sh`; `FV3_SOURCE_DIR` |
+| Mean | `run_mean.sh`; additionally `FV3_BUDGET_JSON`, `FV3_VISUAL_REVIEW_JSON` |
+| Variance | `run_variance.sh --mean-run /absolute/mean/run` |
+| Gain | `run_gain.sh`; `FV3_MEAN_RUN`, `FV3_VARIANCE_RUN` |
+| Closed-loop and replay | `run_evaluate.sh`; additionally `FV3_GAIN_RUN` |
+| Human choice | `run_human_choice.sh`; same frozen models and matching reference scores |
 
-Do not claim bitwise reproduction from this source-only release. Compare preprocessing, target normalization, split hashes, forward precision/batch conventions, and aggregate metrics. The historical project audit observed small forward differences across execution configurations; fixed hardware settings are part of the experiment provenance.
+The original launchers preserve source, protocol, checkpoint, and cache identities. Resume only compatible runs. Development selects checkpoints; it is not an independent final evaluation. Exact floating-point reproduction across GPU configurations has not been established.
+
+`bash scripts/check_release.sh` checks shell syntax, ASCII text, ignore rules, and aggregate checksums without starting training. `results/provenance.json` identifies the runs underlying the README tables.

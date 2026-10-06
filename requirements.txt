@@ -7,4 +7,4 @@ opencv-python-headless==5.0.0.93
 scipy==1.16.1
 torch==2.9.0
 torchvision==0.24.0
-# DINOv2 and DeepGaze source/weights are external; see docs/reproduction.md.
+# DINOv2 and DeepGaze setup: see README.md and docs/reproduction.md.

@@ -11,7 +11,7 @@ for path in .env .env.local id_rsa envs/official/bin/python raw/fixations.json d
     printf 'Expected ignored path is publishable: %s\n' "$path" >&2; exit 1
   fi
 done
-for path in README.md .env.example requirements.txt data_a/audit.py data_a/RAW_SHA256SUMS scripts/prepare_dataset.sh results/mean_metrics.json results/figures/current_mean.png results/figures/current_mean.pdf; do
+for path in README.md .env.example requirements.txt data_a/audit.py data_a/RAW_SHA256SUMS scripts/prepare_dataset.sh results/mean_metrics.json; do
   if git -C "$probe" -c core.excludesFile=/dev/null check-ignore -q --no-index "$path"; then
     printf 'Required public file is ignored: %s\n' "$path" >&2; exit 1
   fi
