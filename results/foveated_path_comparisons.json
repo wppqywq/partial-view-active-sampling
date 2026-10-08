@@ -1,0 +1,228 @@
+{
+  "source_summary_sha256": "bacf4ed12b779e8114f0ecc7f1fd720e58491eca825947c6cd94eaa63c12b46b",
+  "interpretation": "Descriptive development comparisons; intervals not multiplicity corrected. No movement or information-exposure matching; no human mechanism claim.",
+  "paired_differences": {
+    "matched_endpoints": {
+      "globalG_minus_U": {
+        "images": 371,
+        "mean_mse_difference": -0.028814677463458945,
+        "image_bootstrap95": [
+          -0.031174281557213582,
+          -0.026567998032980104
+        ]
+      },
+      "localG_minus_U": {
+        "images": 371,
+        "mean_mse_difference": -0.02280954327562606,
+        "image_bootstrap95": [
+          -0.02525948386787744,
+          -0.020472321158961717
+        ]
+      },
+      "globalG_minus_localG": {
+        "images": 371,
+        "mean_mse_difference": -0.0060051341878328895,
+        "image_bootstrap95": [
+          -0.00658539018371427,
+          -0.005467430036219341
+        ]
+      },
+      "globalG_minus_uniform": {
+        "images": 371,
+        "mean_mse_difference": -0.03604529079240609,
+        "image_bootstrap95": [
+          -0.036945089600589794,
+          -0.03509760036929331
+        ]
+      },
+      "localG_minus_uniform": {
+        "images": 371,
+        "mean_mse_difference": -0.030040156604573202,
+        "image_bootstrap95": [
+          -0.030924623701700238,
+          -0.029095076664782428
+        ]
+      },
+      "globalG_minus_traincenter": {
+        "images": 371,
+        "mean_mse_difference": -0.051945131353612214,
+        "image_bootstrap95": [
+          -0.0532256889765796,
+          -0.050618836197436436
+        ]
+      }
+    },
+    "complete_budget_cohort": {
+      "globalG_minus_U": {
+        "images": 371,
+        "mean_mse_difference": -0.03020055464906446,
+        "image_bootstrap95": [
+          -0.032910734442544935,
+          -0.027728907602998912
+        ]
+      },
+      "localG_minus_U": {
+        "images": 371,
+        "mean_mse_difference": -0.02467254323936884,
+        "image_bootstrap95": [
+          -0.02710239451884311,
+          -0.022345593154662453
+        ]
+      },
+      "globalG_minus_localG": {
+        "images": 371,
+        "mean_mse_difference": -0.005528011409695622,
+        "image_bootstrap95": [
+          -0.006081283602419504,
+          -0.004954717672252143
+        ]
+      },
+      "globalG_minus_uniform": {
+        "images": 371,
+        "mean_mse_difference": -0.03534946720560881,
+        "image_bootstrap95": [
+          -0.03624104723323761,
+          -0.03449489144199446
+        ]
+      },
+      "localG_minus_uniform": {
+        "images": 371,
+        "mean_mse_difference": -0.02982145579591319,
+        "image_bootstrap95": [
+          -0.030723523696366918,
+          -0.02890828631330865
+        ]
+      },
+      "globalG_minus_traincenter": {
+        "images": 371,
+        "mean_mse_difference": -0.05300638620501274,
+        "image_bootstrap95": [
+          -0.05430506684965753,
+          -0.05167200689370919
+        ]
+      }
+    }
+  },
+  "fixed_cohort_selected_budgets": {
+    "human": {
+      "4": {
+        "mse": 0.6014760527445325,
+        "core_coverage": 0.048277593090323895,
+        "mean_resolution": 0.1958712037646754,
+        "movement": 0.6407820135948279
+      },
+      "8": {
+        "mse": 0.567846589372042,
+        "core_coverage": 0.0849076174983399,
+        "mean_resolution": 0.2715009679497678,
+        "movement": 1.571848698241837
+      },
+      "16": {
+        "mse": 0.5286030017002077,
+        "core_coverage": 0.14555954801004525,
+        "mean_resolution": 0.37722610432350356,
+        "movement": 3.5580793497032674
+      }
+    },
+    "U": {
+      "4": {
+        "mse": 0.5788547127596444,
+        "core_coverage": 0.054124633233778814,
+        "mean_resolution": 0.23445225503780667,
+        "movement": 1.9713290636623542
+      },
+      "8": {
+        "mse": 0.5258586908764944,
+        "core_coverage": 0.10397781374469474,
+        "mean_resolution": 0.3646778576916146,
+        "movement": 4.868493983166216
+      },
+      "16": {
+        "mse": 0.4813280506855573,
+        "core_coverage": 0.19025246880751737,
+        "mean_resolution": 0.5252122754464673,
+        "movement": 9.900722448541394
+      }
+    },
+    "localG": {
+      "4": {
+        "mse": 0.5660369318990551,
+        "core_coverage": 0.05665555889219019,
+        "mean_resolution": 0.25083667475245497,
+        "movement": 2.0698289015365168
+      },
+      "8": {
+        "mse": 0.5112838333748105,
+        "core_coverage": 0.1087308076225136,
+        "mean_resolution": 0.39580850973441617,
+        "movement": 5.413982737694955
+      },
+      "16": {
+        "mse": 0.45665550744618844,
+        "core_coverage": 0.21179019438531857,
+        "mean_resolution": 0.6224497657686348,
+        "movement": 11.96055286778311
+      }
+    },
+    "globalG": {
+      "4": {
+        "mse": 0.5612757488396338,
+        "core_coverage": 0.057760844779989856,
+        "mean_resolution": 0.25790911743497313,
+        "movement": 1.7414619155768833
+      },
+      "8": {
+        "mse": 0.5030677579408029,
+        "core_coverage": 0.11468534706780789,
+        "mean_resolution": 0.4211992892811276,
+        "movement": 4.5892303134223935
+      },
+      "16": {
+        "mse": 0.45112749603649277,
+        "core_coverage": 0.22314348417452726,
+        "mean_resolution": 0.6499974225786053,
+        "movement": 10.864995468925617
+      }
+    },
+    "traincenter": {
+      "4": {
+        "mse": 0.5910167504349897,
+        "core_coverage": 0.05444839878467075,
+        "mean_resolution": 0.22244123960702403,
+        "movement": 1.1912947882812661
+      },
+      "8": {
+        "mse": 0.5480887781654945,
+        "core_coverage": 0.1042622896186132,
+        "mean_resolution": 0.33020992826324064,
+        "movement": 2.942947512639536
+      },
+      "16": {
+        "mse": 0.5041338822415055,
+        "core_coverage": 0.19391864634808653,
+        "mean_resolution": 0.47582341667177513,
+        "movement": 6.492674029344761
+      }
+    },
+    "uniform": {
+      "4": {
+        "mse": 0.5906170157537375,
+        "core_coverage": 0.05457014744527528,
+        "mean_resolution": 0.22988472528772239,
+        "movement": 1.7266894899515361
+      },
+      "8": {
+        "mse": 0.5400568542117633,
+        "core_coverage": 0.10643044075200221,
+        "mean_resolution": 0.3552435978230795,
+        "movement": 4.2619211833212916
+      },
+      "16": {
+        "mse": 0.48647696324210155,
+        "core_coverage": 0.20378075477017948,
+        "mean_resolution": 0.5364882008549476,
+        "movement": 9.338027986225468
+      }
+    }
+  }
+}

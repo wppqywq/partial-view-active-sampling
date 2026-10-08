@@ -1,0 +1,1830 @@
+{
+  "split": "development",
+  "overall": {
+    "images": 371,
+    "trials": 3692,
+    "states": 49690,
+    "aggregation": "image->trial->state macro",
+    "bootstrap_replicates": 2000,
+    "models": {
+      "Controls": {
+        "macro_logp": -4.276157318976896,
+        "image_bootstrap95": [
+          -4.3008770837229475,
+          -4.251051443167787
+        ]
+      },
+      "U": {
+        "macro_logp": -4.262225427743593,
+        "image_bootstrap95": [
+          -4.287254208845925,
+          -4.236496903358014
+        ]
+      },
+      "localG": {
+        "macro_logp": -4.240904622588237,
+        "image_bootstrap95": [
+          -4.265946634808556,
+          -4.215713925719461
+        ]
+      },
+      "globalG": {
+        "macro_logp": -4.2522543376351605,
+        "image_bootstrap95": [
+          -4.276729996820815,
+          -4.226683743919756
+        ]
+      },
+      "DeepGaze": {
+        "macro_logp": -3.972252460278698,
+        "image_bootstrap95": [
+          -4.001151313688658,
+          -3.942241677509166
+        ]
+      },
+      "DG_center": {
+        "macro_logp": -4.727611015818813,
+        "image_bootstrap95": [
+          -4.753693654601914,
+          -4.702617404973337
+        ]
+      }
+    },
+    "pairs": [
+      {
+        "first": "localG",
+        "second": "U",
+        "macro_logp_difference": 0.02132080515535551,
+        "image_bootstrap95": [
+          0.016612077074324126,
+          0.02610133239762204
+        ],
+        "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+      },
+      {
+        "first": "globalG",
+        "second": "U",
+        "macro_logp_difference": 0.009971090108432997,
+        "image_bootstrap95": [
+          0.004633666977785689,
+          0.015223745398746425
+        ],
+        "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+      },
+      {
+        "first": "U",
+        "second": "Controls",
+        "macro_logp_difference": 0.013931891233302459,
+        "image_bootstrap95": [
+          0.009723574093313902,
+          0.017787819931151926
+        ],
+        "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+      },
+      {
+        "first": "localG",
+        "second": "Controls",
+        "macro_logp_difference": 0.03525269638865797,
+        "image_bootstrap95": [
+          0.030163699857573768,
+          0.04031335645477474
+        ],
+        "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+      },
+      {
+        "first": "globalG",
+        "second": "Controls",
+        "macro_logp_difference": 0.023902981341735453,
+        "image_bootstrap95": [
+          0.0190349238483301,
+          0.028397985462319083
+        ],
+        "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+      },
+      {
+        "first": "DeepGaze",
+        "second": "localG",
+        "macro_logp_difference": 0.26865216230954,
+        "image_bootstrap95": [
+          0.2503182792038445,
+          0.2885918785359189
+        ],
+        "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+      }
+    ]
+  },
+  "by_budget": [
+    {
+      "history_budget": 1,
+      "images": 371,
+      "trials": 3692,
+      "states": 3692,
+      "aggregation": "image->trial->state macro",
+      "bootstrap_replicates": 2000,
+      "models": {
+        "Controls": {
+          "macro_logp": -4.243103755802004,
+          "image_bootstrap95": [
+            -4.290972424630715,
+            -4.193551481331464
+          ]
+        },
+        "U": {
+          "macro_logp": -4.217642855925053,
+          "image_bootstrap95": [
+            -4.266534131738237,
+            -4.1667888402872535
+          ]
+        },
+        "localG": {
+          "macro_logp": -4.168588084177049,
+          "image_bootstrap95": [
+            -4.212978379357006,
+            -4.121205210805817
+          ]
+        },
+        "globalG": {
+          "macro_logp": -4.204819331248757,
+          "image_bootstrap95": [
+            -4.24773938250168,
+            -4.158077598603446
+          ]
+        },
+        "DeepGaze": {
+          "macro_logp": -3.8477739760301954,
+          "image_bootstrap95": [
+            -3.915277389442132,
+            -3.779867074455103
+          ]
+        },
+        "DG_center": {
+          "macro_logp": -4.292047211218323,
+          "image_bootstrap95": [
+            -4.317585641641745,
+            -4.265313715924674
+          ]
+        }
+      },
+      "pairs": [
+        {
+          "first": "localG",
+          "second": "U",
+          "macro_logp_difference": 0.04905477174800397,
+          "image_bootstrap95": [
+            0.03173971169303982,
+            0.06568830134092477
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "U",
+          "macro_logp_difference": 0.01282352467629523,
+          "image_bootstrap95": [
+            -0.008957496837840773,
+            0.03484569046722366
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "U",
+          "second": "Controls",
+          "macro_logp_difference": 0.02546089987695147,
+          "image_bootstrap95": [
+            0.015880873346690017,
+            0.03531745618986828
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "localG",
+          "second": "Controls",
+          "macro_logp_difference": 0.07451567162495543,
+          "image_bootstrap95": [
+            0.05641613963538148,
+            0.09399405200062233
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "Controls",
+          "macro_logp_difference": 0.038284424553246696,
+          "image_bootstrap95": [
+            0.017097066278547145,
+            0.06049805194412346
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "DeepGaze",
+          "second": "localG",
+          "macro_logp_difference": 0.32081410814685296,
+          "image_bootstrap95": [
+            0.2557014151543014,
+            0.3897836447651995
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        }
+      ]
+    },
+    {
+      "history_budget": 2,
+      "images": 371,
+      "trials": 3680,
+      "states": 3680,
+      "aggregation": "image->trial->state macro",
+      "bootstrap_replicates": 2000,
+      "models": {
+        "Controls": {
+          "macro_logp": -4.379852805682109,
+          "image_bootstrap95": [
+            -4.430901389810704,
+            -4.329249940286042
+          ]
+        },
+        "U": {
+          "macro_logp": -4.344070832934806,
+          "image_bootstrap95": [
+            -4.393015243113421,
+            -4.292968785122662
+          ]
+        },
+        "localG": {
+          "macro_logp": -4.311228078623535,
+          "image_bootstrap95": [
+            -4.358950352285953,
+            -4.262288876238679
+          ]
+        },
+        "globalG": {
+          "macro_logp": -4.342991685046538,
+          "image_bootstrap95": [
+            -4.390217720257285,
+            -4.294934939163398
+          ]
+        },
+        "DeepGaze": {
+          "macro_logp": -3.9090132407983376,
+          "image_bootstrap95": [
+            -3.9754506455976935,
+            -3.8456475524314766
+          ]
+        },
+        "DG_center": {
+          "macro_logp": -4.644737043539457,
+          "image_bootstrap95": [
+            -4.680842840402221,
+            -4.610147716993968
+          ]
+        }
+      },
+      "pairs": [
+        {
+          "first": "localG",
+          "second": "U",
+          "macro_logp_difference": 0.03284275431127125,
+          "image_bootstrap95": [
+            0.020883541129062412,
+            0.04518251667132742
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "U",
+          "macro_logp_difference": 0.0010791478882684023,
+          "image_bootstrap95": [
+            -0.012749526122241516,
+            0.014770643432614406
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "U",
+          "second": "Controls",
+          "macro_logp_difference": 0.03578197274730282,
+          "image_bootstrap95": [
+            0.027318185595228896,
+            0.0442238321296692
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "localG",
+          "second": "Controls",
+          "macro_logp_difference": 0.06862472705857406,
+          "image_bootstrap95": [
+            0.055023243829181244,
+            0.08225998773996795
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "Controls",
+          "macro_logp_difference": 0.03686112063557122,
+          "image_bootstrap95": [
+            0.023261077892854164,
+            0.05072040882823667
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "DeepGaze",
+          "second": "localG",
+          "macro_logp_difference": 0.4022148378251974,
+          "image_bootstrap95": [
+            0.3390459290813633,
+            0.46334706885754734
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        }
+      ]
+    },
+    {
+      "history_budget": 3,
+      "images": 371,
+      "trials": 3673,
+      "states": 3673,
+      "aggregation": "image->trial->state macro",
+      "bootstrap_replicates": 2000,
+      "models": {
+        "Controls": {
+          "macro_logp": -4.3141539791380294,
+          "image_bootstrap95": [
+            -4.3587535707137475,
+            -4.265520681449486
+          ]
+        },
+        "U": {
+          "macro_logp": -4.290799805125104,
+          "image_bootstrap95": [
+            -4.335595654405437,
+            -4.242397884533766
+          ]
+        },
+        "localG": {
+          "macro_logp": -4.271382034503758,
+          "image_bootstrap95": [
+            -4.313087506091737,
+            -4.2249208942188385
+          ]
+        },
+        "globalG": {
+          "macro_logp": -4.2875473385308345,
+          "image_bootstrap95": [
+            -4.329329226564805,
+            -4.243035717433742
+          ]
+        },
+        "DeepGaze": {
+          "macro_logp": -3.9360713512552676,
+          "image_bootstrap95": [
+            -3.987067776622287,
+            -3.8823603219416434
+          ]
+        },
+        "DG_center": {
+          "macro_logp": -4.760171450147117,
+          "image_bootstrap95": [
+            -4.799173230942118,
+            -4.720255580933265
+          ]
+        }
+      },
+      "pairs": [
+        {
+          "first": "localG",
+          "second": "U",
+          "macro_logp_difference": 0.019417770621346635,
+          "image_bootstrap95": [
+            0.008616187196699765,
+            0.030684385839562848
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "U",
+          "macro_logp_difference": 0.0032524665942699664,
+          "image_bootstrap95": [
+            -0.008919959593722316,
+            0.015239279427711614
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "U",
+          "second": "Controls",
+          "macro_logp_difference": 0.02335417401292512,
+          "image_bootstrap95": [
+            0.015016215197867134,
+            0.03131457440828793
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "localG",
+          "second": "Controls",
+          "macro_logp_difference": 0.04277194463427175,
+          "image_bootstrap95": [
+            0.02975095191378756,
+            0.05659283185289107
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "Controls",
+          "macro_logp_difference": 0.02660664060719509,
+          "image_bootstrap95": [
+            0.013536829479809897,
+            0.039819390824529566
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "DeepGaze",
+          "second": "localG",
+          "macro_logp_difference": 0.3353106832484909,
+          "image_bootstrap95": [
+            0.2881768601038947,
+            0.38111423093293273
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        }
+      ]
+    },
+    {
+      "history_budget": 4,
+      "images": 371,
+      "trials": 3662,
+      "states": 3662,
+      "aggregation": "image->trial->state macro",
+      "bootstrap_replicates": 2000,
+      "models": {
+        "Controls": {
+          "macro_logp": -4.266299938618054,
+          "image_bootstrap95": [
+            -4.315860011945196,
+            -4.215460716566126
+          ]
+        },
+        "U": {
+          "macro_logp": -4.245257177952461,
+          "image_bootstrap95": [
+            -4.292841674319811,
+            -4.194327847795842
+          ]
+        },
+        "localG": {
+          "macro_logp": -4.218282360337107,
+          "image_bootstrap95": [
+            -4.265704681459559,
+            -4.169736422497881
+          ]
+        },
+        "globalG": {
+          "macro_logp": -4.237285943930974,
+          "image_bootstrap95": [
+            -4.2855437612143525,
+            -4.187292616171181
+          ]
+        },
+        "DeepGaze": {
+          "macro_logp": -3.9149952778845045,
+          "image_bootstrap95": [
+            -3.966368857662621,
+            -3.8596384453155252
+          ]
+        },
+        "DG_center": {
+          "macro_logp": -4.787589213681357,
+          "image_bootstrap95": [
+            -4.826761717890464,
+            -4.749158839527159
+          ]
+        }
+      },
+      "pairs": [
+        {
+          "first": "localG",
+          "second": "U",
+          "macro_logp_difference": 0.0269748176153536,
+          "image_bootstrap95": [
+            0.0177589798565591,
+            0.03624000624287686
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "U",
+          "macro_logp_difference": 0.007971234021487807,
+          "image_bootstrap95": [
+            -0.0018242426031247704,
+            0.01711698713142939
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "U",
+          "second": "Controls",
+          "macro_logp_difference": 0.021042760665591978,
+          "image_bootstrap95": [
+            0.013779343610020912,
+            0.02811666646816215
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "localG",
+          "second": "Controls",
+          "macro_logp_difference": 0.04801757828094557,
+          "image_bootstrap95": [
+            0.03623371306237864,
+            0.059794817060449104
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "Controls",
+          "macro_logp_difference": 0.029013994687079783,
+          "image_bootstrap95": [
+            0.018992758931654596,
+            0.03874046306453198
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "DeepGaze",
+          "second": "localG",
+          "macro_logp_difference": 0.3032870824526035,
+          "image_bootstrap95": [
+            0.26107219846084767,
+            0.345425010947081
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        }
+      ]
+    },
+    {
+      "history_budget": 5,
+      "images": 371,
+      "trials": 3656,
+      "states": 3656,
+      "aggregation": "image->trial->state macro",
+      "bootstrap_replicates": 2000,
+      "models": {
+        "Controls": {
+          "macro_logp": -4.278129342455435,
+          "image_bootstrap95": [
+            -4.32503686143225,
+            -4.235018824031164
+          ]
+        },
+        "U": {
+          "macro_logp": -4.259365251457025,
+          "image_bootstrap95": [
+            -4.305438127910673,
+            -4.215480266803425
+          ]
+        },
+        "localG": {
+          "macro_logp": -4.2469405379916,
+          "image_bootstrap95": [
+            -4.293271346772279,
+            -4.202710359770475
+          ]
+        },
+        "globalG": {
+          "macro_logp": -4.254489437707798,
+          "image_bootstrap95": [
+            -4.299144827645213,
+            -4.210330802033072
+          ]
+        },
+        "DeepGaze": {
+          "macro_logp": -3.9388557140796285,
+          "image_bootstrap95": [
+            -3.9923508348240793,
+            -3.8878753668617825
+          ]
+        },
+        "DG_center": {
+          "macro_logp": -4.789730941078784,
+          "image_bootstrap95": [
+            -4.827047286735283,
+            -4.75088188361831
+          ]
+        }
+      },
+      "pairs": [
+        {
+          "first": "localG",
+          "second": "U",
+          "macro_logp_difference": 0.01242471346542359,
+          "image_bootstrap95": [
+            0.003142596447602908,
+            0.021426664141964813
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "U",
+          "macro_logp_difference": 0.004875813749225405,
+          "image_bootstrap95": [
+            -0.0053425821497322225,
+            0.01511712791789835
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "U",
+          "second": "Controls",
+          "macro_logp_difference": 0.018764090998410737,
+          "image_bootstrap95": [
+            0.011555303193202882,
+            0.025762523602404448
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "localG",
+          "second": "Controls",
+          "macro_logp_difference": 0.031188804463834326,
+          "image_bootstrap95": [
+            0.020118982455384727,
+            0.04191240505925293
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "Controls",
+          "macro_logp_difference": 0.023639904747636144,
+          "image_bootstrap95": [
+            0.013320823871318277,
+            0.03320918679683253
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "DeepGaze",
+          "second": "localG",
+          "macro_logp_difference": 0.3080848239119723,
+          "image_bootstrap95": [
+            0.26689526236315597,
+            0.35136620108408134
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        }
+      ]
+    },
+    {
+      "history_budget": 6,
+      "images": 371,
+      "trials": 3640,
+      "states": 3640,
+      "aggregation": "image->trial->state macro",
+      "bootstrap_replicates": 2000,
+      "models": {
+        "Controls": {
+          "macro_logp": -4.27691984803785,
+          "image_bootstrap95": [
+            -4.322199139836919,
+            -4.232974647526113
+          ]
+        },
+        "U": {
+          "macro_logp": -4.264447078131635,
+          "image_bootstrap95": [
+            -4.308514677558092,
+            -4.220141308098642
+          ]
+        },
+        "localG": {
+          "macro_logp": -4.247967670453965,
+          "image_bootstrap95": [
+            -4.2925524136988304,
+            -4.202632292977245
+          ]
+        },
+        "globalG": {
+          "macro_logp": -4.258936471669388,
+          "image_bootstrap95": [
+            -4.302748006356288,
+            -4.214170312681233
+          ]
+        },
+        "DeepGaze": {
+          "macro_logp": -3.9492359464402043,
+          "image_bootstrap95": [
+            -4.002190238712848,
+            -3.896135539759848
+          ]
+        },
+        "DG_center": {
+          "macro_logp": -4.783201802281598,
+          "image_bootstrap95": [
+            -4.820856885081804,
+            -4.747746417568313
+          ]
+        }
+      },
+      "pairs": [
+        {
+          "first": "localG",
+          "second": "U",
+          "macro_logp_difference": 0.016479407677669984,
+          "image_bootstrap95": [
+            0.007177669558180421,
+            0.02639252998672807
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "U",
+          "macro_logp_difference": 0.005510606462246035,
+          "image_bootstrap95": [
+            -0.0045529131430945835,
+            0.01636300148472402
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "U",
+          "second": "Controls",
+          "macro_logp_difference": 0.012472769906215935,
+          "image_bootstrap95": [
+            0.004602731992126618,
+            0.020036677871759823
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "localG",
+          "second": "Controls",
+          "macro_logp_difference": 0.028952177583885925,
+          "image_bootstrap95": [
+            0.019266558735084073,
+            0.03928386905148586
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "Controls",
+          "macro_logp_difference": 0.01798337636846197,
+          "image_bootstrap95": [
+            0.009078513779305863,
+            0.026481518984385617
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "DeepGaze",
+          "second": "localG",
+          "macro_logp_difference": 0.29873172401376075,
+          "image_bootstrap95": [
+            0.2581642611874186,
+            0.3433442834797384
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        }
+      ]
+    },
+    {
+      "history_budget": 7,
+      "images": 371,
+      "trials": 3619,
+      "states": 3619,
+      "aggregation": "image->trial->state macro",
+      "bootstrap_replicates": 2000,
+      "models": {
+        "Controls": {
+          "macro_logp": -4.265451128230221,
+          "image_bootstrap95": [
+            -4.310233538983556,
+            -4.221133996456414
+          ]
+        },
+        "U": {
+          "macro_logp": -4.25749795152188,
+          "image_bootstrap95": [
+            -4.30100941298951,
+            -4.212200365721218
+          ]
+        },
+        "localG": {
+          "macro_logp": -4.239929660527053,
+          "image_bootstrap95": [
+            -4.284165067136687,
+            -4.193829667298817
+          ]
+        },
+        "globalG": {
+          "macro_logp": -4.247620132723176,
+          "image_bootstrap95": [
+            -4.292303766599662,
+            -4.20121087294597
+          ]
+        },
+        "DeepGaze": {
+          "macro_logp": -3.9723754359688233,
+          "image_bootstrap95": [
+            -4.02212762427046,
+            -3.922542582212633
+          ]
+        },
+        "DG_center": {
+          "macro_logp": -4.802555073036807,
+          "image_bootstrap95": [
+            -4.839645986260816,
+            -4.766059966603546
+          ]
+        }
+      },
+      "pairs": [
+        {
+          "first": "localG",
+          "second": "U",
+          "macro_logp_difference": 0.017568290994827998,
+          "image_bootstrap95": [
+            0.00941733431340246,
+            0.026061856487161607
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "U",
+          "macro_logp_difference": 0.00987781879870465,
+          "image_bootstrap95": [
+            0.0009289423243433293,
+            0.01891303200548899
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "U",
+          "second": "Controls",
+          "macro_logp_difference": 0.00795317670834,
+          "image_bootstrap95": [
+            0.0012945705479366465,
+            0.014813476474815278
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "localG",
+          "second": "Controls",
+          "macro_logp_difference": 0.025521467703168002,
+          "image_bootstrap95": [
+            0.01663184334221677,
+            0.034431796647078364
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "Controls",
+          "macro_logp_difference": 0.017830995507044648,
+          "image_bootstrap95": [
+            0.010355128178487983,
+            0.025206096858127667
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "DeepGaze",
+          "second": "localG",
+          "macro_logp_difference": 0.26755422455822947,
+          "image_bootstrap95": [
+            0.2271271131861162,
+            0.30828526708579834
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        }
+      ]
+    },
+    {
+      "history_budget": 8,
+      "images": 371,
+      "trials": 3578,
+      "states": 3578,
+      "aggregation": "image->trial->state macro",
+      "bootstrap_replicates": 2000,
+      "models": {
+        "Controls": {
+          "macro_logp": -4.265184912034592,
+          "image_bootstrap95": [
+            -4.3114481844214945,
+            -4.21998600076875
+          ]
+        },
+        "U": {
+          "macro_logp": -4.2521541318498794,
+          "image_bootstrap95": [
+            -4.297164407870586,
+            -4.207468668196074
+          ]
+        },
+        "localG": {
+          "macro_logp": -4.242899273872827,
+          "image_bootstrap95": [
+            -4.289285300992452,
+            -4.198237999477385
+          ]
+        },
+        "globalG": {
+          "macro_logp": -4.250078056608412,
+          "image_bootstrap95": [
+            -4.296047475722561,
+            -4.204216195585306
+          ]
+        },
+        "DeepGaze": {
+          "macro_logp": -4.010157082265349,
+          "image_bootstrap95": [
+            -4.063266168285787,
+            -3.9588391338492945
+          ]
+        },
+        "DG_center": {
+          "macro_logp": -4.795456693425354,
+          "image_bootstrap95": [
+            -4.829776397489571,
+            -4.758585095706115
+          ]
+        }
+      },
+      "pairs": [
+        {
+          "first": "localG",
+          "second": "U",
+          "macro_logp_difference": 0.009254857977051776,
+          "image_bootstrap95": [
+            0.0010942942509321707,
+            0.017457125996061328
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "U",
+          "macro_logp_difference": 0.0020760752414667005,
+          "image_bootstrap95": [
+            -0.0056051610634588744,
+            0.009536475723866865
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "U",
+          "second": "Controls",
+          "macro_logp_difference": 0.013030780184712628,
+          "image_bootstrap95": [
+            0.006496040115613111,
+            0.019415855308860867
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "localG",
+          "second": "Controls",
+          "macro_logp_difference": 0.022285638161764404,
+          "image_bootstrap95": [
+            0.013019451307206453,
+            0.030716235277177945
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "Controls",
+          "macro_logp_difference": 0.01510685542617933,
+          "image_bootstrap95": [
+            0.008028548792622492,
+            0.02139294084669318
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "DeepGaze",
+          "second": "localG",
+          "macro_logp_difference": 0.2327421916074791,
+          "image_bootstrap95": [
+            0.1893633270661506,
+            0.27582450605296865
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        }
+      ]
+    },
+    {
+      "history_budget": 9,
+      "images": 371,
+      "trials": 3527,
+      "states": 3527,
+      "aggregation": "image->trial->state macro",
+      "bootstrap_replicates": 2000,
+      "models": {
+        "Controls": {
+          "macro_logp": -4.263933835158312,
+          "image_bootstrap95": [
+            -4.3075478184022975,
+            -4.223291698235177
+          ]
+        },
+        "U": {
+          "macro_logp": -4.2536178885514095,
+          "image_bootstrap95": [
+            -4.297770165331873,
+            -4.212212659575282
+          ]
+        },
+        "localG": {
+          "macro_logp": -4.2383294297369405,
+          "image_bootstrap95": [
+            -4.28278046523282,
+            -4.19848156362121
+          ]
+        },
+        "globalG": {
+          "macro_logp": -4.245849777701413,
+          "image_bootstrap95": [
+            -4.2902067373531025,
+            -4.205389824754529
+          ]
+        },
+        "DeepGaze": {
+          "macro_logp": -3.9605302661608617,
+          "image_bootstrap95": [
+            -4.01161134848487,
+            -3.910557469105437
+          ]
+        },
+        "DG_center": {
+          "macro_logp": -4.799151192413886,
+          "image_bootstrap95": [
+            -4.8383052628510095,
+            -4.762786569810106
+          ]
+        }
+      },
+      "pairs": [
+        {
+          "first": "localG",
+          "second": "U",
+          "macro_logp_difference": 0.015288458814468945,
+          "image_bootstrap95": [
+            0.006859524849973364,
+            0.023691154081096642
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "U",
+          "macro_logp_difference": 0.0077681108499955825,
+          "image_bootstrap95": [
+            -0.0005137866899536991,
+            0.015809945366816514
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "U",
+          "second": "Controls",
+          "macro_logp_difference": 0.01031594660690186,
+          "image_bootstrap95": [
+            0.003101710491165521,
+            0.017486055600589745
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "localG",
+          "second": "Controls",
+          "macro_logp_difference": 0.025604405421370807,
+          "image_bootstrap95": [
+            0.01715734023163342,
+            0.03346724335148192
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "Controls",
+          "macro_logp_difference": 0.018084057456897444,
+          "image_bootstrap95": [
+            0.012230393794318983,
+            0.0237807046703893
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "DeepGaze",
+          "second": "localG",
+          "macro_logp_difference": 0.277799163576079,
+          "image_bootstrap95": [
+            0.23779552411370233,
+            0.3177749177791648
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        }
+      ]
+    },
+    {
+      "history_budget": 10,
+      "images": 371,
+      "trials": 3432,
+      "states": 3432,
+      "aggregation": "image->trial->state macro",
+      "bootstrap_replicates": 2000,
+      "models": {
+        "Controls": {
+          "macro_logp": -4.24951035519836,
+          "image_bootstrap95": [
+            -4.290154765285562,
+            -4.209284017661182
+          ]
+        },
+        "U": {
+          "macro_logp": -4.247732349716822,
+          "image_bootstrap95": [
+            -4.288873946383192,
+            -4.208195200905158
+          ]
+        },
+        "localG": {
+          "macro_logp": -4.231611537017668,
+          "image_bootstrap95": [
+            -4.27113363109369,
+            -4.190917063984626
+          ]
+        },
+        "globalG": {
+          "macro_logp": -4.230490439185947,
+          "image_bootstrap95": [
+            -4.271416759146568,
+            -4.18955349011657
+          ]
+        },
+        "DeepGaze": {
+          "macro_logp": -4.001144061606535,
+          "image_bootstrap95": [
+            -4.051321400011736,
+            -3.9517775513491875
+          ]
+        },
+        "DG_center": {
+          "macro_logp": -4.787840264194364,
+          "image_bootstrap95": [
+            -4.826598265709586,
+            -4.748708863080452
+          ]
+        }
+      },
+      "pairs": [
+        {
+          "first": "localG",
+          "second": "U",
+          "macro_logp_difference": 0.016120812699153362,
+          "image_bootstrap95": [
+            0.008648384871092896,
+            0.024410429896963737
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "U",
+          "macro_logp_difference": 0.01724191053087476,
+          "image_bootstrap95": [
+            0.010479328851612823,
+            0.02455060936512918
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "U",
+          "second": "Controls",
+          "macro_logp_difference": 0.0017780054815387729,
+          "image_bootstrap95": [
+            -0.005536510491164081,
+            0.008680930874130747
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "localG",
+          "second": "Controls",
+          "macro_logp_difference": 0.01789881818069214,
+          "image_bootstrap95": [
+            0.010391662880429786,
+            0.025469531447727657
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "Controls",
+          "macro_logp_difference": 0.01901991601241353,
+          "image_bootstrap95": [
+            0.014662443118509682,
+            0.023491049185097455
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "DeepGaze",
+          "second": "localG",
+          "macro_logp_difference": 0.23046747541113285,
+          "image_bootstrap95": [
+            0.18552847061200622,
+            0.2758495249075067
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        }
+      ]
+    },
+    {
+      "history_budget": 11,
+      "images": 371,
+      "trials": 3304,
+      "states": 3304,
+      "aggregation": "image->trial->state macro",
+      "bootstrap_replicates": 2000,
+      "models": {
+        "Controls": {
+          "macro_logp": -4.232588544103739,
+          "image_bootstrap95": [
+            -4.275363603425581,
+            -4.1907385100891945
+          ]
+        },
+        "U": {
+          "macro_logp": -4.230139712582136,
+          "image_bootstrap95": [
+            -4.272805702655136,
+            -4.187780797187048
+          ]
+        },
+        "localG": {
+          "macro_logp": -4.209540832645715,
+          "image_bootstrap95": [
+            -4.2520644813432416,
+            -4.167382897976204
+          ]
+        },
+        "globalG": {
+          "macro_logp": -4.214241040349337,
+          "image_bootstrap95": [
+            -4.258099514428508,
+            -4.171723659929275
+          ]
+        },
+        "DeepGaze": {
+          "macro_logp": -3.9889613815283775,
+          "image_bootstrap95": [
+            -4.03826910778116,
+            -3.937560748828843
+          ]
+        },
+        "DG_center": {
+          "macro_logp": -4.781735168614587,
+          "image_bootstrap95": [
+            -4.816375417054994,
+            -4.747951997378069
+          ]
+        }
+      },
+      "pairs": [
+        {
+          "first": "localG",
+          "second": "U",
+          "macro_logp_difference": 0.020598879936421295,
+          "image_bootstrap95": [
+            0.013369511700401371,
+            0.028262482480071474
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "U",
+          "macro_logp_difference": 0.015898672232800073,
+          "image_bootstrap95": [
+            0.008635247633388899,
+            0.02294685713792996
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "U",
+          "second": "Controls",
+          "macro_logp_difference": 0.0024488315216024932,
+          "image_bootstrap95": [
+            -0.004081921205372141,
+            0.009259561179911509
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "localG",
+          "second": "Controls",
+          "macro_logp_difference": 0.023047711458023784,
+          "image_bootstrap95": [
+            0.015624508650427926,
+            0.030608008095198803
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "Controls",
+          "macro_logp_difference": 0.018347503754402566,
+          "image_bootstrap95": [
+            0.013535918469207209,
+            0.022799673364842406
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "DeepGaze",
+          "second": "localG",
+          "macro_logp_difference": 0.22057945111733737,
+          "image_bootstrap95": [
+            0.17945612054583882,
+            0.262126254948467
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        }
+      ]
+    },
+    {
+      "history_budget": 12,
+      "images": 371,
+      "trials": 3103,
+      "states": 3103,
+      "aggregation": "image->trial->state macro",
+      "bootstrap_replicates": 2000,
+      "models": {
+        "Controls": {
+          "macro_logp": -4.218928431990339,
+          "image_bootstrap95": [
+            -4.258975927556254,
+            -4.177264045294164
+          ]
+        },
+        "U": {
+          "macro_logp": -4.212593743985121,
+          "image_bootstrap95": [
+            -4.252840879278989,
+            -4.171442344843869
+          ]
+        },
+        "localG": {
+          "macro_logp": -4.1983673107769395,
+          "image_bootstrap95": [
+            -4.2405876123237185,
+            -4.1556742994142954
+          ]
+        },
+        "globalG": {
+          "macro_logp": -4.198653994950369,
+          "image_bootstrap95": [
+            -4.2396565374042625,
+            -4.15693559618279
+          ]
+        },
+        "DeepGaze": {
+          "macro_logp": -3.9781309096961537,
+          "image_bootstrap95": [
+            -4.025398947631177,
+            -3.9272214979475444
+          ]
+        },
+        "DG_center": {
+          "macro_logp": -4.7733329877176365,
+          "image_bootstrap95": [
+            -4.810171740213897,
+            -4.7393407065168125
+          ]
+        }
+      },
+      "pairs": [
+        {
+          "first": "localG",
+          "second": "U",
+          "macro_logp_difference": 0.014226433208181014,
+          "image_bootstrap95": [
+            0.006560820656082456,
+            0.02233203806323105
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "U",
+          "macro_logp_difference": 0.01393974903475035,
+          "image_bootstrap95": [
+            0.006578431178586586,
+            0.02154983061690905
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "U",
+          "second": "Controls",
+          "macro_logp_difference": 0.006334688005218372,
+          "image_bootstrap95": [
+            -0.00011360807238542934,
+            0.012949493342594251
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "localG",
+          "second": "Controls",
+          "macro_logp_difference": 0.020561121213399387,
+          "image_bootstrap95": [
+            0.013456770718638622,
+            0.02790016466676459
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "Controls",
+          "macro_logp_difference": 0.020274437039968722,
+          "image_bootstrap95": [
+            0.015570630631553261,
+            0.02517893116844536
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "DeepGaze",
+          "second": "localG",
+          "macro_logp_difference": 0.22023640108078513,
+          "image_bootstrap95": [
+            0.17484981743960668,
+            0.2637568510672625
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        }
+      ]
+    },
+    {
+      "history_budget": 13,
+      "images": 371,
+      "trials": 2810,
+      "states": 2810,
+      "aggregation": "image->trial->state macro",
+      "bootstrap_replicates": 2000,
+      "models": {
+        "Controls": {
+          "macro_logp": -4.246495830576203,
+          "image_bootstrap95": [
+            -4.292536337863838,
+            -4.204973467996322
+          ]
+        },
+        "U": {
+          "macro_logp": -4.236530788220437,
+          "image_bootstrap95": [
+            -4.282321815504932,
+            -4.194225712585677
+          ]
+        },
+        "localG": {
+          "macro_logp": -4.226618842052403,
+          "image_bootstrap95": [
+            -4.27269991030972,
+            -4.184822352679131
+          ]
+        },
+        "globalG": {
+          "macro_logp": -4.22617014874916,
+          "image_bootstrap95": [
+            -4.272112311802815,
+            -4.183125851057791
+          ]
+        },
+        "DeepGaze": {
+          "macro_logp": -4.043016538646798,
+          "image_bootstrap95": [
+            -4.09594994446173,
+            -3.987586099826879
+          ]
+        },
+        "DG_center": {
+          "macro_logp": -4.772741653882049,
+          "image_bootstrap95": [
+            -4.80848529639466,
+            -4.739043124093565
+          ]
+        }
+      },
+      "pairs": [
+        {
+          "first": "localG",
+          "second": "U",
+          "macro_logp_difference": 0.009911946168033762,
+          "image_bootstrap95": [
+            0.00207509836795674,
+            0.017733038742128105
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "U",
+          "macro_logp_difference": 0.01036063947127653,
+          "image_bootstrap95": [
+            0.004006765369953013,
+            0.016482524878147074
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "U",
+          "second": "Controls",
+          "macro_logp_difference": 0.009965042355766203,
+          "image_bootstrap95": [
+            0.003694791418630006,
+            0.016196213968847316
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "localG",
+          "second": "Controls",
+          "macro_logp_difference": 0.019876988523799963,
+          "image_bootstrap95": [
+            0.012144398798272116,
+            0.028050237419849664
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "Controls",
+          "macro_logp_difference": 0.020325681827042735,
+          "image_bootstrap95": [
+            0.015539863185845503,
+            0.025267232455486455
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "DeepGaze",
+          "second": "localG",
+          "macro_logp_difference": 0.18360230340560457,
+          "image_bootstrap95": [
+            0.13851416232644792,
+            0.23325837544417416
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        }
+      ]
+    },
+    {
+      "history_budget": 14,
+      "images": 371,
+      "trials": 2401,
+      "states": 2401,
+      "aggregation": "image->trial->state macro",
+      "bootstrap_replicates": 2000,
+      "models": {
+        "Controls": {
+          "macro_logp": -4.169141042106059,
+          "image_bootstrap95": [
+            -4.217357881776781,
+            -4.119296801583713
+          ]
+        },
+        "U": {
+          "macro_logp": -4.15549328334924,
+          "image_bootstrap95": [
+            -4.204857458862266,
+            -4.105294415463656
+          ]
+        },
+        "localG": {
+          "macro_logp": -4.1352351107915615,
+          "image_bootstrap95": [
+            -4.185123323124459,
+            -4.084245064481088
+          ]
+        },
+        "globalG": {
+          "macro_logp": -4.1440378529358854,
+          "image_bootstrap95": [
+            -4.194222722945446,
+            -4.092826322691869
+          ]
+        },
+        "DeepGaze": {
+          "macro_logp": -3.943113080287557,
+          "image_bootstrap95": [
+            -4.002213685785871,
+            -3.8814906466020735
+          ]
+        },
+        "DG_center": {
+          "macro_logp": -4.733809595071316,
+          "image_bootstrap95": [
+            -4.774558110508959,
+            -4.695143755762417
+          ]
+        }
+      },
+      "pairs": [
+        {
+          "first": "localG",
+          "second": "U",
+          "macro_logp_difference": 0.02025817255767781,
+          "image_bootstrap95": [
+            0.011968398081679554,
+            0.02909365874009404
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "U",
+          "macro_logp_difference": 0.011455430413354362,
+          "image_bootstrap95": [
+            0.00398890609472573,
+            0.019301073352527908
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "U",
+          "second": "Controls",
+          "macro_logp_difference": 0.013647758756819285,
+          "image_bootstrap95": [
+            0.00667682474392004,
+            0.02118224063751284
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "localG",
+          "second": "Controls",
+          "macro_logp_difference": 0.033905931314497095,
+          "image_bootstrap95": [
+            0.02519088466106738,
+            0.04301949659254189
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "Controls",
+          "macro_logp_difference": 0.025103189170173647,
+          "image_bootstrap95": [
+            0.019683187310757334,
+            0.030558893700315858
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "DeepGaze",
+          "second": "localG",
+          "macro_logp_difference": 0.1921220305040049,
+          "image_bootstrap95": [
+            0.1390811641487442,
+            0.24614388513139276
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        }
+      ]
+    },
+    {
+      "history_budget": 15,
+      "images": 371,
+      "trials": 1913,
+      "states": 1913,
+      "aggregation": "image->trial->state macro",
+      "bootstrap_replicates": 2000,
+      "models": {
+        "Controls": {
+          "macro_logp": -4.127785051049285,
+          "image_bootstrap95": [
+            -4.188892707924587,
+            -4.0675398846049395
+          ]
+        },
+        "U": {
+          "macro_logp": -4.122647898007869,
+          "image_bootstrap95": [
+            -4.186057681655276,
+            -4.060806980625951
+          ]
+        },
+        "localG": {
+          "macro_logp": -4.099085962940342,
+          "image_bootstrap95": [
+            -4.162275665321079,
+            -4.035981755002209
+          ]
+        },
+        "globalG": {
+          "macro_logp": -4.102664010359616,
+          "image_bootstrap95": [
+            -4.163898322096452,
+            -4.040457167648413
+          ]
+        },
+        "DeepGaze": {
+          "macro_logp": -3.995840187213011,
+          "image_bootstrap95": [
+            -4.0666189958748005,
+            -3.9224765829701047
+          ]
+        },
+        "DG_center": {
+          "macro_logp": -4.715239619994342,
+          "image_bootstrap95": [
+            -4.762940467997573,
+            -4.672591979165919
+          ]
+        }
+      },
+      "pairs": [
+        {
+          "first": "localG",
+          "second": "U",
+          "macro_logp_difference": 0.023561935067525682,
+          "image_bootstrap95": [
+            0.01468749498478139,
+            0.03249913841805647
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "U",
+          "macro_logp_difference": 0.019983887648252246,
+          "image_bootstrap95": [
+            0.011562407101310068,
+            0.028205159763942684
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "U",
+          "second": "Controls",
+          "macro_logp_difference": 0.005137153041416518,
+          "image_bootstrap95": [
+            -0.003330874152266361,
+            0.012988177301629907
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "localG",
+          "second": "Controls",
+          "macro_logp_difference": 0.028699088108942204,
+          "image_bootstrap95": [
+            0.019671296194664102,
+            0.03792690766810508
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "globalG",
+          "second": "Controls",
+          "macro_logp_difference": 0.025121040689668764,
+          "image_bootstrap95": [
+            0.019569209724207927,
+            0.031056279429520283
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        },
+        {
+          "first": "DeepGaze",
+          "second": "localG",
+          "macro_logp_difference": 0.10324577572733246,
+          "image_bootstrap95": [
+            0.04597473833687118,
+            0.16088143268462485
+          ],
+          "direction": "positive favors first; descriptive intervals, not multiplicity corrected"
+        }
+      ]
+    }
+  ],
+  "reference_targets": "same complete target subset, image/subject/index/cell/history/coordinate equality verified",
+  "conditional_support": "fixed content grid; border target observations excluded; all content candidates retained"
+}

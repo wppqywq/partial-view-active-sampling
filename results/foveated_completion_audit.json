@@ -1,0 +1,36 @@
+{
+  "state": "passed",
+  "audit_job": "22978",
+  "date": "2026-10-07",
+  "scope": "Completed revised-observer development experiment; no inference, retraining, or new holdout claims",
+  "verified": [
+    "all six immutable run source manifests",
+    "training-only ceil budget16 and engineering geometry",
+    "accepted r2 visual review and variance review identities",
+    "complete new gain data and checkpoint",
+    "all3698 human histories match raw prefixes including revisits; same policy starts and budgets",
+    "all six policy endpoint means and1..16curves independently recomputed in both cohorts",
+    "fixed16cohort1915trials and denominator accounting",
+    "four human fits meet gradient tolerance",
+    "exact49690reference target alignment",
+    "all supported raw human targets present once",
+    "human-choice image/trial/state means independently recomputed"
+  ],
+  "source_runs": {
+    "prepare": 22741,
+    "mean": 22742,
+    "variance": 22754,
+    "gain": 22779,
+    "paths": 22831,
+    "choice": 22832
+  },
+  "limitations": [
+    "descriptive development evaluation; upstream checkpoints selected on development",
+    "gain train features are in-sample to upstream observer/G",
+    "conditional content-grid likelihood excludes border targets",
+    "freeview humans saw normal full images; offline model uses simulated cumulative foveation",
+    "controls statistically adjust spatial/history/q features; not causal matching",
+    "canonical float32 coordinates preserve archived DeepGaze reference convention",
+    "no model-recovery sweep; coefficients do not establish unique psychological mechanisms"
+  ]
+}
